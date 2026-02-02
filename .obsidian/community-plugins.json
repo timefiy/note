@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "obsidian-custom-attachment-location",
-  "remotely-save"
+  "remotely-save",
+  "obsidian-linter"
 ]
