@@ -46,8 +46,13 @@ $$
 \sqrt{2} \\
 \sqrt[n]{x} \\
 \ \alpha\  \beta\  \gamma\ \\
-`\sum_{i=1}^n i
+\sum_{i=1}^n i \\
+\int_a^b f(x)\,dx
 \end{aligned}
+$$
+
+$$
+
 $$
 
 ### 对齐与多行
