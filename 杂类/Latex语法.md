@@ -40,7 +40,15 @@ $$
   \end{bmatrix}
   ```
 
-$$  \frac{a}{b} \\\\ \sqrt{2}\\\\ \sqrt[n]{x} $$
+$$
+\begin{aligned}
+\frac{a}{b} \\
+\sqrt{2} \\
+\sqrt[n]{x} \\
+\ \alpha\  \beta\  \gamma\ \\
+`\sum_{i=1}^n i
+\end{aligned}
+$$
 
 ### 对齐与多行
 
