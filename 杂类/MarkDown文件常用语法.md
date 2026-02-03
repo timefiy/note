@@ -94,6 +94,8 @@
 
 ## 数学公式
 
+使用latex语法[Latex语法](Latex语法.md)
+
 $$
-Einstein 's $E = mc^2$. 
+E = mc^2  
 $$
