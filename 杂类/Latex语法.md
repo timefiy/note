@@ -40,7 +40,7 @@ $$
   \end{bmatrix}
   ```
 
-$$ \frac{a}{b} \ \sqrt{2}\、\sqrt[n]{x} $$
+$$  \frac{a}{b} \\ \sqrt{2}\\ \sqrt[n]{x} $$
 
 ### 对齐与多行
 
