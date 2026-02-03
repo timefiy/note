@@ -52,7 +52,10 @@ $$
 $$
 
 $$
-
+  \begin{bmatrix}
+  a & b\\
+  c & d
+  \end{bmatrix}
 $$
 
 ### 对齐与多行
