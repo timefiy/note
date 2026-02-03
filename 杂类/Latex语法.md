@@ -40,12 +40,12 @@ $$
   \end{bmatrix}
   ```
 
-$$  \frac{a}{b} \\ \sqrt{2}\\ \sqrt[n]{x} $$
+$$  \frac{a}{b} \\\\ \sqrt{2}\\\\ \sqrt[n]{x} $$
 
 ### 对齐与多行
 
 ```latex
-\begin{align}
+\begin{align}   
 E &= mc^2 \\
 F &= ma
 \end{align}
