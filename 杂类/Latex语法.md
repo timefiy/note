@@ -7,3 +7,54 @@
 作者使用章（chapter）、节（section）、表（table）、图（figure）等简单的概念指定文档的逻辑结构，并让LaTeX系统负责这些结构的格式和布局。因此，它鼓励从内容中分离布局，同时仍然允许在需要时进行手动排版调整。
 
 ## latex文件常用语法
+
+### 基本公式
+
+- 行内：`$E=mc^2$`
+- 独立：
+
+  ```latex
+  $$
+  E=mc^2
+  $$
+  ```
+
+- 上下标：`x_i^2`
+
+$$
+E=mc^2
+$$
+
+### 常用符号
+
+- 分式：`\frac{a}{b}`
+- 开方：`\sqrt{2}`、`\sqrt[n]{x}`
+- 希腊字母：`\alpha \beta \gamma`
+- 求和积分：`\sum_{i=1}^n i`，`\int_a^b f(x)\,dx`
+- 矩阵：
+
+  ```latex
+  \begin{bmatrix}
+  a & b\\
+  c & d
+  \end{bmatrix}
+  ```
+
+$$
+\frac{a}{b}
+\sqrt{2}、\sqrt[n]{x}
+$$
+
+### 对齐与多行
+
+```latex
+\begin{align}
+E &= mc^2 \\
+F &= ma
+\end{align}
+```
+
+### 空格与注释
+
+- 空格：`\ `、`\quad`
+- 注释：`%`
