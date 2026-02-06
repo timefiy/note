@@ -1,13 +1,13 @@
 ---
-title: "用链表加强哈希表（LinkedHashMap）"
-source: "https://labuladong.online/zh/algo/data-structure-basic/hashtable-with-linked-list/"
+title: 用链表加强哈希表（LinkedHashMap）
+source: https://labuladong.online/zh/algo/data-structure-basic/hashtable-with-linked-list/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "本文将介绍哈希链表（LinkedHashMap）的原理、特性，支持哈希表的键按照插入顺序排序，并给出 Java/C++/Python/Golang/JavaScript 的代码实现。"
+description: 本文将介绍哈希链表（LinkedHashMap）的原理、特性，支持哈希表的键按照插入顺序排序，并给出 Java/C++/Python/Golang/JavaScript 的代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

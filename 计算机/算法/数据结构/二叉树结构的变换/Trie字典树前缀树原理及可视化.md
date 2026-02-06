@@ -1,13 +1,13 @@
 ---
-title: "Trie/字典树/前缀树原理及可视化"
-source: "https://labuladong.online/zh/algo/data-structure-basic/trie-map-basic/"
+title: Trie/字典树/前缀树原理及可视化
+source: https://labuladong.online/zh/algo/data-structure-basic/trie-map-basic/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "Trie/字典树/前缀树结构是多叉树的延伸，针对字符串处理有特殊优化。对比 HashMap，它有节约存储空间、方便处理前缀操作、支持通配符匹配等优点。本文介绍 TrieMap 的核心原理、标准接口。"
+description: Trie/字典树/前缀树结构是多叉树的延伸，针对字符串处理有特殊优化。对比 HashMap，它有节约存储空间、方便处理前缀操作、支持通配符匹配等优点。本文介绍 TrieMap 的核心原理、标准接口。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

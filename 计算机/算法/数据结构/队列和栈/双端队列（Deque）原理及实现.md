@@ -1,13 +1,13 @@
 ---
-title: "双端队列（Deque）原理及实现"
-source: "https://labuladong.online/zh/algo/data-structure-basic/deque-implement/"
+title: 双端队列（Deque）原理及实现
+source: https://labuladong.online/zh/algo/data-structure-basic/deque-implement/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "双端队列（deque）是一种允许在队头和队尾插入和删除元素的数据结构。本文用双链表和环形数组技巧分别实现双端队列，支持 Java/C++/Python/Golang/JavaScript。"
+description: 双端队列（deque）是一种允许在队头和队尾插入和删除元素的数据结构。本文用双链表和环形数组技巧分别实现双端队列，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

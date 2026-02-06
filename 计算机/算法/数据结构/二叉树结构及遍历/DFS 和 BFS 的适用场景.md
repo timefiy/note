@@ -1,13 +1,13 @@
 ---
-title: "DFS 和 BFS 的适用场景"
-source: "https://labuladong.online/zh/algo/data-structure-basic/use-case-of-dfs-bfs/"
+title: DFS 和 BFS 的适用场景
+source: https://labuladong.online/zh/algo/data-structure-basic/use-case-of-dfs-bfs/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "本文介绍为什么 DFS 常用来穷举所有路径，BFS 常用来寻找最短路径。"
+description: 本文介绍为什么 DFS 常用来穷举所有路径，BFS 常用来寻找最短路径。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

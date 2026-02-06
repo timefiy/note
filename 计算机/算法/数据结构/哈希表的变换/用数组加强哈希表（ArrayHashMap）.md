@@ -1,13 +1,13 @@
 ---
-title: "用数组加强哈希表（ArrayHashMap）"
-source: "https://labuladong.online/zh/algo/data-structure-basic/hashtable-with-array/"
+title: 用数组加强哈希表（ArrayHashMap）
+source: https://labuladong.online/zh/algo/data-structure-basic/hashtable-with-array/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "本文将介绍哈希数组（ArrayHashMap）的原理、特性，支持在 O(1) 时间返回一个随机的建，并给出 Java/C++/Python/Golang/JavaScript 的代码实现。"
+description: 本文将介绍哈希数组（ArrayHashMap）的原理、特性，支持在 O(1) 时间返回一个随机的建，并给出 Java/C++/Python/Golang/JavaScript 的代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

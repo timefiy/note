@@ -1,13 +1,13 @@
 ---
-title: "图结构的 DFS/BFS 遍历"
-source: "https://labuladong.online/zh/algo/data-structure-basic/graph-traverse-basic/"
+title: 图结构的 DFS/BFS 遍历
+source: https://labuladong.online/zh/algo/data-structure-basic/graph-traverse-basic/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-06
-description: "图的遍历就是多叉树遍历的延伸，主要的遍历方式还是深度优先搜索（DFS）和广度优先搜索（BFS）。相比多叉树遍历，图的遍历需要额外处理环的问题；遍历节点和遍历路径需要区别对待。"
+description: 图的遍历就是多叉树遍历的延伸，主要的遍历方式还是深度优先搜索（DFS）和广度优先搜索（BFS）。相比多叉树遍历，图的遍历需要额外处理环的问题；遍历节点和遍历路径需要区别对待。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 
