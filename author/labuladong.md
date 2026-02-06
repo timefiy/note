@@ -1,5 +1,9 @@
 # 部分笔记采集自labuladong
 
+==部分笔记来源于labuladong的刷题攻略的总结，里面有一些我个人的看法==
+
+----
+
 作者 : labuladong
 
 [作者网站](https://labuladong.online/zh/)
