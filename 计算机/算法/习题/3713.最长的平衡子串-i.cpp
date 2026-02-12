@@ -29,7 +29,14 @@ public:
         } 
     }
 
-    bool check(int )
+    bool check(int cnt[]){
+        int flag = cnt[0];
+        for (int i = 1; i < 26; i++)
+        {
+            /* code */
+        }
+        
+    }
 };
 // @lc code=end
 
