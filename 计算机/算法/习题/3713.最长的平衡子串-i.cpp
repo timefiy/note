@@ -11,9 +11,15 @@ using namespace std;
 class Solution {
 public:
     int longestBalanced(string s) {
-        for(int i = 0; i < string.size(); i++){
-
-        }
+        int n = s.size();
+        for(int i = 0; i < n; i++){
+            int cnt[26] = {0};
+            for (int j = 0; j < i; j++)
+            {
+                
+            }
+            
+        } 
     }
 };
 // @lc code=end
