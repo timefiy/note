@@ -23,10 +23,12 @@ public:
                 {
                     cnt[s[k] - 'a']++;
                 }
-
+                if(check(cnt)){
+                    ans = max(ans, i - j);
+                }
             }
-            
         } 
+        return ans;
     }
 
     bool check(int cnt[]){
