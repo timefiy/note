@@ -13,12 +13,13 @@ public:
     int longestBalanced(string s) {
         int n = s.size();
         for(int i = 0; i < n; i++){
-            int cnt[26] = {0};
+            
             for (int j = 0; j < i; j++)
-            {
-                for (int k = j; k < i; i++)
+            {   
+                int cnt[26] = {0};
+                for (int k = j; k < i; k++)
                 {
-                    cnt[k - (int)'a']++;
+                    cnt[k]++;
                 }
             }
             
