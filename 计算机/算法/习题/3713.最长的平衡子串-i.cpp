@@ -48,3 +48,9 @@ public:
 };
 // @lc code=end
 
+int main(){
+    Solution s;
+    string str = "aabbcc";
+    cout << s.longestBalanced(str) << endl;
+    return 0;
+}
