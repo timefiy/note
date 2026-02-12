@@ -16,7 +16,10 @@ public:
             int cnt[26] = {0};
             for (int j = 0; j < i; j++)
             {
-                
+                for (int k = j; k < i; i++)
+                {
+
+                }
             }
             
         } 
