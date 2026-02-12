@@ -1,21 +1,18 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug",
+            "name": "g++.exe - 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}", 
             "environment": [],
-            "externalConsole": false, // 设置为 true 会弹出一个独立的黑窗口
+            "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe", // 如果配置过环境变量，直接写 gdb.exe 即可
+            "miDebuggerPath": "gdb.exe", 
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
@@ -23,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file" // 这行很重要，它会在调试前先编译
+            "preLaunchTask": "C/C++: g++.exe build active file"
         }
     ]
 }
