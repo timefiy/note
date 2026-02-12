@@ -33,9 +33,11 @@ public:
         int flag = cnt[0];
         for (int i = 1; i < 26; i++)
         {
-            /* code */
+            if(cnt[i] != flag){
+                return false;
+            }
         }
-        
+        return true;
     }
 };
 // @lc code=end
