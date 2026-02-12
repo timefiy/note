@@ -1,13 +1,6 @@
-# include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-/*
- * @lc app=leetcode.cn id=3713 lang=cpp
- *
- * [3713] 最长的平衡子串 I
- */
-
-// @lc code=start
 class Solution {
 public:
     int longestBalanced(string s) {
@@ -15,15 +8,14 @@ public:
         int ans = 0;
 
         for(int i = 0; i < n; i++){
-            for (int j = 0; j < i; j++)
-            {   
-                int cnt[26] = {0};
-                for (int k = j; k < i; k++)
-                {
-                    cnt[s[k] - 'a']++;
-                }
+            int cnt[26] = {0}; 
+            
+            for (int j = i; j < n; j++)
+            {
+                cnt[s[j] - 'a']++;
+
                 if(check(cnt)){
-                    ans = max(ans, i - j);
+                    ans = max(ans, j - i + 1);
                 }
             }
         } 
@@ -45,7 +37,6 @@ public:
         return standard != -1;
     }
 };
-// @lc code=end
 
 int main(){
     Solution s;
