@@ -29,7 +29,7 @@ public:
         } 
     }
 
-    bool check(int[] )
+    bool check(int )
 };
 // @lc code=end
 
