@@ -18,7 +18,7 @@ public:
             {
                 for (int k = j; k < i; i++)
                 {
-
+                    cnt[k - (int)'a']++;
                 }
             }
             
