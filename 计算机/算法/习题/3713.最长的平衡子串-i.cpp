@@ -32,14 +32,18 @@ public:
     }
 
     bool check(int cnt[]){
-        int flag = cnt[0];
-        for (int i = 1; i < 26; i++)
+        int standard = -1; 
+        for (int i = 0; i < 26; i++)
         {
-            if(cnt[i] != flag){
-                return false;
+            if (cnt[i] > 0) {
+                if (standard == -1) {
+                    standard = cnt[i]; 
+                } else if (cnt[i] != standard) {
+                    return false; 
+                }
             }
         }
-        return true;
+        return standard != -1;
     }
 };
 // @lc code=end
