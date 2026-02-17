@@ -1,13 +1,13 @@
 ---
-title: "算法就像搭乐高：手撸 LRU 算法"
-source: "https://labuladong.online/zh/algo/data-structure/lru-cache/"
+title: 算法就像搭乐高：手撸 LRU 算法
+source: https://labuladong.online/zh/algo/data-structure/lru-cache/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 力扣/LeetCode 的 LRU 缓存算法问题，运用哈希表和双向链表组合出哈希链表结构，给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解 力扣/LeetCode 的 LRU 缓存算法问题，运用哈希表和双向链表组合出哈希链表结构，给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 

@@ -1,13 +1,13 @@
 ---
-title: "Trie 树算法习题"
-source: "https://labuladong.online/zh/algo/problem-set/trie/"
+title: Trie 树算法习题
+source: https://labuladong.online/zh/algo/problem-set/trie/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 力扣/LeetCode 上的前缀树算法经典习题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解 力扣/LeetCode 上的前缀树算法经典习题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

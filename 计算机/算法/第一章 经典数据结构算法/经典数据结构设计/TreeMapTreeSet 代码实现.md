@@ -1,13 +1,13 @@
 ---
-title: "TreeMap/TreeSet 代码实现"
-source: "https://labuladong.online/zh/algo/data-structure-basic/tree-map-implement/"
+title: TreeMap/TreeSet 代码实现
+source: https://labuladong.online/zh/algo/data-structure-basic/tree-map-implement/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 TreeMap/TreeSet 代码实现，运用二叉搜索树（BST）实现基本的增删查改和 rank/select 方法，并给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解 TreeMap/TreeSet 代码实现，运用二叉搜索树（BST）实现基本的增删查改和 rank/select 方法，并给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

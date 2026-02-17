@@ -1,13 +1,13 @@
 ---
-title: "Trie 树代码实现"
-source: "https://labuladong.online/zh/algo/data-structure/trie-implement/"
+title: Trie 树代码实现
+source: https://labuladong.online/zh/algo/data-structure/trie-implement/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文结合算法可视化面板讲解 Trie/字典树/前缀树代码实现，运用多叉树结构实现基本的增删查改和前缀搜索，并给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文结合算法可视化面板讲解 Trie/字典树/前缀树代码实现，运用多叉树结构实现基本的增删查改和前缀搜索，并给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 关于 Trie 树的原理，请参见基础知识章节的 [Trie 树原理](https://labuladong.online/zh/algo/data-structure-basic/trie-map-basic/) ，本文将直接给出 Trie 树的代码实现。
 

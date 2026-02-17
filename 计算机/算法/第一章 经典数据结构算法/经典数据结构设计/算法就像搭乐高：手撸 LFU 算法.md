@@ -1,13 +1,13 @@
 ---
-title: "算法就像搭乐高：手撸 LFU 算法"
-source: "https://labuladong.online/zh/algo/frequency-interview/lfu/"
+title: 算法就像搭乐高：手撸 LFU 算法
+source: https://labuladong.online/zh/algo/frequency-interview/lfu/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文利用哈希集合和双向链表实现 LFU 缓存机制，解决 力扣/LeetCode 上的 LFU 缓存题目，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文利用哈希集合和双向链表实现 LFU 缓存机制，解决 力扣/LeetCode 上的 LFU 缓存题目，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 
