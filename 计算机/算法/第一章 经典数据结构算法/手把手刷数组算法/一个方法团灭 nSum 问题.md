@@ -1,13 +1,13 @@
 ---
-title: "一个方法团灭 nSum 问题"
-source: "https://labuladong.online/zh/algo/practice-in-action/nsum/"
+title: 一个方法团灭 nSum 问题
+source: https://labuladong.online/zh/algo/practice-in-action/nsum/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解如何利用排序和双指针技巧归纳一套统一的代码框架，解决力扣/LeetCode 上的所有 nSum 问题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解如何利用排序和双指针技巧归纳一套统一的代码框架，解决力扣/LeetCode 上的所有 nSum 问题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 
