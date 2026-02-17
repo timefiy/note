@@ -1,13 +1,13 @@
 ---
-title: "回溯算法实践：数独和 N 皇后问题"
-source: "https://labuladong.online/zh/algo/practice-in-action/sudoku-nqueue/"
+title: 回溯算法实践：数独和 N 皇后问题
+source: https://labuladong.online/zh/algo/practice-in-action/sudoku-nqueue/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解如何利用回溯算法解决数独问题和 N 皇后问题，解决力扣/LeetCode 上的 37,51,52 题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解如何利用回溯算法解决数独问题和 N 皇后问题，解决力扣/LeetCode 上的 37,51,52 题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 

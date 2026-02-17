@@ -1,13 +1,13 @@
 ---
-title: "【游戏】扫雷 II"
-source: "https://labuladong.online/zh/algo/game/minesweeper-ii/"
+title: 【游戏】扫雷 II
+source: https://labuladong.online/zh/algo/game/minesweeper-ii/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本页面介绍了扫雷游戏的基本玩法，并使用算法完成点击展开地图的功能。"
+description: 本页面介绍了扫雷游戏的基本玩法，并使用算法完成点击展开地图的功能。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

@@ -1,13 +1,13 @@
 ---
-title: "解答回溯算法/DFS算法的若干疑问"
-source: "https://labuladong.online/zh/algo/essential-technique/backtrack-vs-dfs/"
+title: 解答回溯算法/DFS算法的若干疑问
+source: https://labuladong.online/zh/algo/essential-technique/backtrack-vs-dfs/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文用最简单的示例，讲解回溯算法和 DFS 算法的区别和练习，回溯算法代码框架中的细节问题。"
+description: 本文用最简单的示例，讲解回溯算法和 DFS 算法的区别和练习，回溯算法代码框架中的细节问题。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

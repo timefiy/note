@@ -1,13 +1,13 @@
 ---
-title: "回溯算法经典习题 I"
-source: "https://labuladong.online/zh/algo/problem-set/backtrack-i/"
+title: 回溯算法经典习题 I
+source: https://labuladong.online/zh/algo/problem-set/backtrack-i/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上回溯算法算法的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，教会读者如何套用回溯算法代码框架。支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上回溯算法算法的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，教会读者如何套用回溯算法代码框架。支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 ### 967\. 连续差相同的数字
 
