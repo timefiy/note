@@ -1,13 +1,13 @@
 ---
-title: "BFS 算法解题套路框架"
-source: "https://labuladong.online/zh/algo/essential-technique/bfs-framework-2/"
+title: BFS 算法解题套路框架
+source: https://labuladong.online/zh/algo/essential-technique/bfs-framework-2/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文介绍 BFS（广度优先搜索）核心框架和代码模板，BFS 算法的本质是层序遍历多叉树，主要应用场景是寻找最短路径。"
+description: 本文介绍 BFS（广度优先搜索）核心框架和代码模板，BFS 算法的本质是层序遍历多叉树，主要应用场景是寻找最短路径。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 
