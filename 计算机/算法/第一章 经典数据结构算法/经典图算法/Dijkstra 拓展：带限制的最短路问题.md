@@ -1,13 +1,13 @@
 ---
-title: "Dijkstra 拓展：带限制的最短路问题"
-source: "https://labuladong.online/zh/algo/data-structure/dijkstra-follow-up/"
+title: Dijkstra 拓展：带限制的最短路问题
+source: https://labuladong.online/zh/algo/data-structure/dijkstra-follow-up/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 Dijkstra 单源最短路径的实现原理和通用代码模板，解决力扣/LeetCode 的相关例题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解 Dijkstra 单源最短路径的实现原理和通用代码模板，解决力扣/LeetCode 的相关例题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

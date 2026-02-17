@@ -1,13 +1,13 @@
 ---
-title: "A* 算法核心原理及实现"
-source: "https://labuladong.online/zh/algo/data-structure/a-star/"
+title: A* 算法核心原理及实现
+source: https://labuladong.online/zh/algo/data-structure/a-star/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 A* 算法的实现原理和代码模板，它是 Dijkstra 算法的改进版，适用于能设计出启发函数的点对点最短路径问题（如二维网格寻路），通过启发函数提高搜索效率。"
+description: 本文讲解 A* 算法的实现原理和代码模板，它是 Dijkstra 算法的改进版，适用于能设计出启发函数的点对点最短路径问题（如二维网格寻路），通过启发函数提高搜索效率。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 

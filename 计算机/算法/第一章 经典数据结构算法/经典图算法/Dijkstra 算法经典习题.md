@@ -1,13 +1,13 @@
 ---
-title: "Dijkstra 算法经典习题"
-source: "https://labuladong.online/zh/algo/problem-set/dijkstra/"
+title: Dijkstra 算法经典习题
+source: https://labuladong.online/zh/algo/problem-set/dijkstra/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有 Dijkstra 算法的经典习题，包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有 Dijkstra 算法的经典习题，包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

@@ -1,13 +1,13 @@
 ---
-title: "Prim 最小生成树算法"
-source: "https://labuladong.online/zh/algo/data-structure/prim/"
+title: Prim 最小生成树算法
+source: https://labuladong.online/zh/algo/data-structure/prim/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解 Prim 最小生成树算法，介绍切分定理，运用优先级队列实现贪心思想求解最小生成树，解决力扣/LeetCode 的相关例题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解 Prim 最小生成树算法，介绍切分定理，运用优先级队列实现贪心思想求解最小生成树，解决力扣/LeetCode 的相关例题，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 读完本文，你不仅学会了算法套路，还可以顺便解决如下题目：
 

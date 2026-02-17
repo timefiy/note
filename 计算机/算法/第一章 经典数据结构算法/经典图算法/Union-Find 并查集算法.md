@@ -1,13 +1,13 @@
 ---
-title: "Union-Find 并查集算法"
-source: "https://labuladong.online/zh/algo/data-structure/union-find/"
+title: Union-Find 并查集算法
+source: https://labuladong.online/zh/algo/data-structure/union-find/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文讲解并查集/Union-Find 动态连通性算法的原理，解决力扣/LeetCode 上的相关题目，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。"
+description: 本文讲解并查集/Union-Find 动态连通性算法的原理，解决力扣/LeetCode 上的相关题目，同时给出 Java/Python/Go/JavaScript/C++ 代码实现。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

@@ -1,13 +1,13 @@
 ---
-title: "Hierholzer 算法寻找欧拉路径"
-source: "https://labuladong.online/zh/algo/data-structure/eulerian-graph-hierholzer/"
+title: Hierholzer 算法寻找欧拉路径
+source: https://labuladong.online/zh/algo/data-structure/eulerian-graph-hierholzer/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文介绍 Hierholzer 算法、欧拉图的应用以及相关的算法题。"
+description: 本文介绍 Hierholzer 算法、欧拉图的应用以及相关的算法题。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 
