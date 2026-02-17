@@ -1,13 +1,13 @@
 ---
-title: "利用后序位置解题 I"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-i/"
+title: 利用后序位置解题 I
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-i/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 有些题目，你按照拍脑袋的方式去做，可能发现需要在递归代码中调用其他递归函数计算字数的信息。一般来说，出现这种情况时你可以考虑用后序遍历的思维方式来优化算法，利用后序遍历传递子树的信息，避免过高的时间复杂度。
 

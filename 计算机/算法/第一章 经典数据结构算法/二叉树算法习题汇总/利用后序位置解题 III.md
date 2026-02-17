@@ -1,13 +1,13 @@
 ---
-title: "利用后序位置解题 III"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-iii/"
+title: 利用后序位置解题 III
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-iii/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第三部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第三部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 写在后序位置的代码是最潇洒的，上通父节点（可以通过函数参数获取父节点信息），下通子树（可以通过递归返回值收集子树信息），有少部分难度比较大的题目会同时用到这两个特性。
 

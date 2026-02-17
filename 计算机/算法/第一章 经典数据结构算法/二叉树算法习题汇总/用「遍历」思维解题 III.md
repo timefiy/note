@@ -1,13 +1,13 @@
 ---
-title: "用「遍历」思维解题 III"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-traverse-iii/"
+title: 用「遍历」思维解题 III
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-traverse-iii/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有用遍历思维求解的二叉树经典习题（第三部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有用遍历思维求解的二叉树经典习题（第三部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 二叉树的题目还会夹杂着一些其他算法技巧一起考你，不过都离不开二叉树的遍历框架，看几道例题，体会一下。
 

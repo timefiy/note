@@ -1,13 +1,13 @@
 ---
-title: "用「遍历」思维解题 II"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-traverse-ii/"
+title: 用「遍历」思维解题 II
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-traverse-ii/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有用遍历思维求解的二叉树经典习题（第二部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有用遍历思维求解的二叉树经典习题（第二部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 如果让你在二叉树中的某些节点上做文章，一般来说也可以直接用遍历的思维模式。
 

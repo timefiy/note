@@ -1,13 +1,13 @@
 ---
-title: "用「分解问题」思维解题 I"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-divide-i/"
+title: 用「分解问题」思维解题 I
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-divide-i/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有用分解问题思维求解的二叉树经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有用分解问题思维求解的二叉树经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 最常见的，二叉树的构造问题一般都会用到分解问题的思维模式。
 

@@ -1,13 +1,13 @@
 ---
-title: "运用层序遍历解题 I"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-level-i/"
+title: 运用层序遍历解题 I
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-level-i/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有二叉树层序遍历的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有二叉树层序遍历的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 前置知识
 

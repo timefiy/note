@@ -1,13 +1,13 @@
 ---
-title: "二叉搜索树经典例题 I"
-source: "https://labuladong.online/zh/algo/problem-set/bst1/"
+title: 二叉搜索树经典例题 I
+source: https://labuladong.online/zh/algo/problem-set/bst1/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有二叉搜索树的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有二叉搜索树的经典习题（第一部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 下面列出的 BST 题目主要考察 BST 左小右大、中序遍历有序的特点。
 

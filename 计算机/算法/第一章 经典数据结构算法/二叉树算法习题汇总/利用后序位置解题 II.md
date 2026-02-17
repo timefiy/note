@@ -1,13 +1,13 @@
 ---
-title: "利用后序位置解题 II"
-source: "https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-ii/"
+title: 利用后序位置解题 II
+source: https://labuladong.online/zh/algo/problem-set/binary-tree-post-order-ii/
 author:
-  - "[[labuladong]]"
+  - "[[../../../../author/labuladong]]"
 published:
 created: 2026-02-17
-description: "本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第二部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。"
+description: 本文汇总了 力扣/LeetCode 上所有利用二叉树后序位置求解的经典习题（第二部分），包含 labuladong 思路讲解和算法可视化，支持 Java/C++/Python/Golang/JavaScript。
 tags:
-  - "clippings"
+  - clippings
 ---
 像求和、求高度这种基本的二叉树函数很容易写，有时候只要在它们的后序位置添加一点代码，就能得到我们想要的答案。
 
