@@ -171,7 +171,7 @@ for (const auto &pair : hashmap) {
 
 **重要提醒**：访问不存在的键会自动创建该键，值为默认构造值。
 
-### 哈希集合 unordered_set
+### 哈希集合 unordered_set（无序）
 
 #### unordered_set 初始化
 
@@ -218,6 +218,8 @@ int main() {
 ```
 
 ### 传引用（Pass by Reference）
+
+引用不会创建一个新的参数，所以对于类似递归来说的算法，使用引用会减少空间复杂度。
 
 ```cpp
 void modifyReference(int &x) {
