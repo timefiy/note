@@ -175,6 +175,8 @@ for (const auto &pair : hashmap) {
 
 #### unordered_set 初始化
 
+插入重复的元素重复的元素会变为1个元素。
+
 ```cpp
 #include <unordered_set>
 
