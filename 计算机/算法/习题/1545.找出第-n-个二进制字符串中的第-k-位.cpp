@@ -21,8 +21,9 @@ public:
             return s;
         }
 
+        s = s + "1" + reverse(invert(s));
 
-        findKthString(n - 1, s);
+        return findKthString(n - 1, s);
     }
 
     void invert(string &s) {
