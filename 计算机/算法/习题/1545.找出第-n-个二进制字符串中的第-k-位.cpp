@@ -21,12 +21,12 @@ public:
             return s;
         }
 
-        s = s + "1" + reverse(invert(s));
+        s = s + "1" + reverse(invert(s).begin(), invert(s).end());
 
         return findKthString(n - 1, s);
     }
 
-    void invert(string &s) {
+    string invert(string &s) {
         for (int i = 0; i < s.size(); i++) {
             if (s[i] == '0') {
                 s[i] = '1';
@@ -34,6 +34,7 @@ public:
                 s[i] = '0';
             }
         }
+        return s;
     }
 };
 // @lc code=end
