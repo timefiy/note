@@ -12,10 +12,27 @@ class Solution {
 public:
     char findKthBit(int n, int k) {
         string s = "0";
+        s = findKthString(n, s);
+        return s[k - 1];
     }
 
-    char findkKthString(int n, string &s){
+    string findKthString(int n, string &s){
+        if (n == 0) {
+            return s;
+        }
 
+
+        findKthString(n - 1, s);
+    }
+
+    void invert(string &s) {
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == '0') {
+                s[i] = '1';
+            } else {
+                s[i] = '0';
+            }
+        }
     }
 };
 // @lc code=end
