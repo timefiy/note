@@ -21,12 +21,15 @@ public:
             return s;
         }
 
-        s = s + "1" + reverse(invert(s).begin(), invert(s).end());
+        string temp = s;
+        string inverted = invert(temp);
+        reverse(inverted.begin(), inverted.end());
+        s = s + "1" + inverted;
 
         return findKthString(n - 1, s);
     }
 
-    string invert(string &s) {
+    string invert(string s) {
         for (int i = 0; i < s.size(); i++) {
             if (s[i] == '0') {
                 s[i] = '1';
