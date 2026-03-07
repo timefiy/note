@@ -11,7 +11,7 @@ using namespace std;
 class Solution {
 public:
     int minFlips(string s) {
-        
+       return min(reverse(s), reverse(de_add(s))); 
     }
     
     string de_add(string s){
@@ -19,11 +19,14 @@ public:
         return s.substr(1) + s[0];
     }
 
-    string reverse(string s){
+    int reverse(string s){
         int flag = s[0];
+        int count = 0;
         for(int i = 1; i < s.size(); i++){
-            
+            if(s[i] != flag && flag%2 == 0) count++;
+            else if(s[i] == flag && flag%2 == 1) count++; 
         }
+        return count;
     }
 };
 // @lc code=end
