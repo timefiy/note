@@ -11,30 +11,42 @@ using namespace std;
 class Solution {
 public:
     int minFlips(string s) {
-        cout << reverse(s) << endl;
-        cout << reverse(de_add(s)) << endl;
-        return min(reverse(s), reverse(de_add(s))); 
-    }
-    
-    string de_add(string s){
-        if (s.empty()) return "";
-        return s.substr(1) + s[0];
-    }
-
-    int reverse(string s){
-        int flag = s[0];
-        int count = 0;
-        for(int i = 1; i < s.size(); i++){
-            if(s[i] != flag && i%2 == 0) count++;
-            else if(s[i] == flag && i%2 == 1) count++; 
+        int n = s.length();
+        string doubled_s = s + s;
+        
+        // 构造两种完美交替的靶子
+        string target_A = "";
+        string target_B = "";
+        for (int i = 0; i < 2 * n; i++) {
+            target_A += (i % 2 == 0) ? '0' : '1'; // 010101...
+            target_B += (i % 2 == 0) ? '1' : '0'; // 101010...
         }
-        return count;
+        
+        int min_flips = INT_MAX;
+        int diff_A = 0; // 记录当前窗口和 target_A 的差异数
+        int diff_B = 0; // 记录当前窗口和 target_B 的差异数
+        
+        // 开始滑动窗口遍历
+        for (int i = 0; i < 2 * n; i++) {
+            // 1. 右侧新字符进入窗口：如果不匹配，增加差异计数
+            if (doubled_s[i] != target_A[i]) diff_A++;
+            if (doubled_s[i] != target_B[i]) diff_B++;
+            
+            // 2. 左侧老字符移出窗口：如果窗口长度超过了 n，左边的字符就要出局
+            if (i >= n) {
+                int left = i - n; // 被踢出窗口的字符的索引
+                if (doubled_s[left] != target_A[left]) diff_A--;
+                if (doubled_s[left] != target_B[left]) diff_B--;
+            }
+            
+            // 3. 当窗口大小刚好达到 n 时，开始记录最小反转次数
+            if (i >= n - 1) {
+                min_flips = min({min_flips, diff_A, diff_B});
+            }
+        }
+        
+        return min_flips;
     }
 };
-
-int main(){
-    Solution s;
-    cout << s.minFlips("1110") << endl;
-}
 // @lc code=end
     
