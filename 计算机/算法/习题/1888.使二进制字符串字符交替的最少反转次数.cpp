@@ -11,7 +11,9 @@ using namespace std;
 class Solution {
 public:
     int minFlips(string s) {
-       return min(reverse(s), reverse(de_add(s))); 
+        cout << reverse(s) << endl;
+        cout << reverse(de_add(s)) << endl;
+        return min(reverse(s), reverse(de_add(s))); 
     }
     
     string de_add(string s){
@@ -29,5 +31,10 @@ public:
         return count;
     }
 };
+
+int main(){
+    Solution s;
+    cout << s.minFlips("1110") << endl;
+}
 // @lc code=end
     
