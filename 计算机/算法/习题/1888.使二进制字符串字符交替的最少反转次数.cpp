@@ -25,8 +25,8 @@ public:
         int flag = s[0];
         int count = 0;
         for(int i = 1; i < s.size(); i++){
-            if(s[i] != flag && flag%2 == 0) count++;
-            else if(s[i] == flag && flag%2 == 1) count++; 
+            if(s[i] != flag && i%2 == 0) count++;
+            else if(s[i] == flag && i%2 == 1) count++; 
         }
         return count;
     }
