@@ -19,7 +19,12 @@ public:
         return s.substr(1) + s[0];
     }
 
-    string
+    string reverse(string s){
+        int flag = s[0];
+        for(int i = 1; i < s.size(); i++){
+            
+        }
+    }
 };
 // @lc code=end
-
+    
