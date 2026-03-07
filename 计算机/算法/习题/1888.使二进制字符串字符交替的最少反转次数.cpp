@@ -1,3 +1,6 @@
+# include <bits/stdc++.h>
+using namespace std;
+
 /*
  * @lc app=leetcode.cn id=1888 lang=cpp
  *
@@ -10,6 +13,13 @@ public:
     int minFlips(string s) {
         
     }
+    
+    string de_add(string s){
+        if (s.empty()) return "";
+        return s.substr(1) + s[0];
+    }
+
+    string
 };
 // @lc code=end
 
