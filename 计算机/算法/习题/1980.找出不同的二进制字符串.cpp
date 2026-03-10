@@ -28,9 +28,18 @@ public:
                 result = curr_str;
                 return true;
             }
+        return false;
         }
 
-        
+        curr_str.push_back('0');
+        if(backtrack(result, curr_str, s, n)) return true;
+        curr_str.pop_back();
+
+        curr_str.push_back('1');
+        if(backtrack(result, curr_str, s, n)) return true;
+        curr_str.pop_back();
+
+        return false;
     }
 };
 // @lc code=end
