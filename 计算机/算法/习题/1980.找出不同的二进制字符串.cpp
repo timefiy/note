@@ -22,7 +22,9 @@ public:
     }
 
     bool backtrack(string& result, const unordered_set<string>& s, int n){
-
+        if(result.size() == n){
+            s.find(result) 
+        }
     }
 };
 // @lc code=end
