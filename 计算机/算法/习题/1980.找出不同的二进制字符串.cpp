@@ -15,19 +15,22 @@ public:
         unordered_set<string> s(nums.begin(), nums.end());
         int n = nums.size();
 
-        string result = " ";
-        backtrack(result, s, n);
+        string result = "";
+        string curr_str = "";
+        backtrack(result, curr_str, s, n);
 
         return result;
     }
 
-    bool backtrack(string& result, const unordered_set<string>& s, int n){
+    bool backtrack(string& result, string curr_str,const unordered_set<string>& s, int n){
         if(result.size() == n){
             if(s.find(result) == s.end()){
+                result = curr_str;
                 return true;
             }
-            
         }
+
+        
     }
 };
 // @lc code=end
