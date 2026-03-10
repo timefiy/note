@@ -12,6 +12,9 @@ using namespace std;
 class Solution {
 public:
     string findDifferentBinaryString(vector<string>& nums) {
+        unordered_set<string> s(nums.begin(), nums.end());
+        int n = nums.size();
+
         
     }
 };
