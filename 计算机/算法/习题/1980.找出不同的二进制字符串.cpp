@@ -16,12 +16,12 @@ public:
         int n = nums.size();
 
         string result = " ";
-        backtrack
+        backtrack(result, s, n);
 
         return result;
     }
 
-    bool backtrack(){
+    bool backtrack(string& result, const unordered_set<string>& s, int n){
 
     }
 };
