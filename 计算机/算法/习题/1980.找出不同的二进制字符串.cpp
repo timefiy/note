@@ -23,8 +23,8 @@ public:
     }
 
     bool backtrack(string& result, string curr_str,const unordered_set<string>& s, int n){
-        if(result.size() == n){
-            if(s.find(result) == s.end()){
+        if(curr_str.size() == n){
+            if(s.find(curr_str) == s.end()){
                 result = curr_str;
                 return true;
             }
