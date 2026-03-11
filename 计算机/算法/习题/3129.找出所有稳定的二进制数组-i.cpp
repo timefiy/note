@@ -12,7 +12,11 @@ public:
     }
 
     int dp(int zero, int one, int end, int& limit) {
-
+        if (condition)
+        {
+            /* code */
+        }
+        
     }
 };
 // @lc code=end
