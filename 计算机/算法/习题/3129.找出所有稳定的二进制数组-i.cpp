@@ -11,10 +11,10 @@ using namespace std;
 class Solution {
 public:
     int mod = 1e9 + 7;
-    vector<vector<int>> memo;
+    vector<vector<vector<int>>> memo;
 
     int numberOfStableArrays(int zero, int one, int limit) {
-        memo = vector<vector<int>>(zero + 1, vector<int>(one + 1, -1));
+        memo = vector<vector<vector<int>>>(zero + 1, vector<vector<int>>(one + 1, vector<int>(2, 0)));
         return dp(zero, one, -1, limit);
     }
 
