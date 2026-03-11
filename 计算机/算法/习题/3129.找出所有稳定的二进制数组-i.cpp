@@ -10,6 +10,10 @@ public:
     int numberOfStableArrays(int zero, int one, int limit) {
         
     }
+
+    int dp(int zero, int one, int end, int& limit) {
+
+    }
 };
 // @lc code=end
 
