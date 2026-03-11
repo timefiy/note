@@ -14,7 +14,7 @@ public:
     vector<vector<vector<int>>> memo;
 
     int numberOfStableArrays(int zero, int one, int limit) {
-        memo = vector<vector<vector<int>>>(zero + 1, vector<vector<int>>(one + 1, vector<int>(2, 0)));
+        memo = vector<vector<vector<int>>>(zero + 1, vector<vector<int>>(one + 1, vector<int>(2, -1)));
         return dp(zero, one, -1, limit);
     }
 
@@ -28,6 +28,10 @@ public:
             return (end == 1 && zero <= limit) ? 1 : 0;
         }
         
+        if (memo[zero][one][end] != -1)
+        {
+            return memo[zero][one][end + 1];
+        }
         
         if(zero == 0 && one == 0){
 
