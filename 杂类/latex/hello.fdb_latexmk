@@ -1,12 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1773320234.7978 "e:/note/杂类/latex/hello.tex" "hello.pdf" "hello" 1773320235.39348 2
-  "d:/texlive/2026/texmf-dist/tex/latex/base/article.cls" 1773317239.53399 20144 b966087dda3b194755eb460d32e2ef75 ""
-  "d:/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty" 1773317239.56497 5048 0270515b828149155424600fd2d58ac5 ""
-  "d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo" 1773317239.61753 8448 686612a86f0e04f41ea577f5ec7e83d8 ""
-  "d:/texlive/2026/texmf-dist/web2c/texmf.cnf" 1773315362.97458 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
-  "d:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1773319610 3636389 545ead40ea38bb0c2037edada97bb2ae ""
-  "d:/texlive/2026/texmf.cnf" 1773319412.93198 713 baa45e065482d44c4cd81b98ef72c63b ""
-  "e:/note/杂类/latex/hello.tex" 1773320141.64723 56 67898988e4b4d282f6de45854e529afd ""
+["pdflatex"] 0 "e:/note/杂类/latex/hello.tex" "hello.pdf" "hello" 0 -1
+  "e:/note/杂类/latex/hello.tex" 0 -1 0 ""
   "hello.aux" 0 -1 0 "pdflatex"
   (generated)
   "hello.aux"
