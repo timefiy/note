@@ -50,7 +50,6 @@ $$
 \int_a^b f(x)\,dx
 \end{aligned}
 $$
-
 $$
   \begin{bmatrix}
   a & b\\
@@ -67,7 +66,13 @@ F &= ma
 \end{align}
 ```
 
+$$
+\begin{align}   
+E &= mc^2 \\
+F &= ma
+\end{align}
+$$
 ### 空格与注释
-
+$
 - 空格：`\ `、`\quad`
 - 注释：`%`
