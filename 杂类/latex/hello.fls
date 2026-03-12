@@ -1,0 +1,13 @@
+PWD E:/note/杂类/latex
+INPUT d:/texlive/2026/texmf.cnf
+INPUT d:/texlive/2026/texmf-dist/web2c/texmf.cnf
+INPUT d:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT e:/note/杂类/latex/hello.tex
+OUTPUT hello.log
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/article.cls
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/article.cls
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+INPUT d:/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
