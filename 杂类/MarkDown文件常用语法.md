@@ -94,7 +94,7 @@
 
 ## 数学公式
 
-使用latex语法[Latex语法](服务器/latex/Latex语法.md)
+使用latex语法[Latex语法](latex/Latex语法.md)
 
 $$
 E = mc^2  
