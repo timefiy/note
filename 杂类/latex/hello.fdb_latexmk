@@ -1,9 +1,0 @@
-# Fdb version 4
-["pdflatex"] 0 "e:/note/杂类/latex/hello.tex" "hello.pdf" "hello" 0 -1
-  "e:/note/杂类/latex/hello.tex" 0 -1 0 ""
-  "hello.aux" 0 -1 0 "pdflatex"
-  (generated)
-  "hello.aux"
-  "hello.log"
-  "hello.pdf"
-  (rewritten before read)
