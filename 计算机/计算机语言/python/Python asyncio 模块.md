@@ -227,14 +227,14 @@ if __name__ == "__main__":
 
 下面以表格形式列出 `asyncio` 中几个最常用的高级函数：
 
-| 函数 | 主要作用 | 常用参数说明 |
-| --- | --- | --- |
-| **`asyncio.run(coro, *, debug=False)`** | 运行一个顶层协程，管理事件循环的生命周期。是程序的主入口。 | `coro`: 要运行的协程对象。   `debug`: 设为 `True` 可启用事件循环的调试模式。 |
-| **`asyncio.create_task(coro, *, name=None)`** | 将协程包装成一个 **Task** 对象，并排入事件循环等待调度。这是实现并发的主要方式。 | `coro`: 要包装的协程对象。   `name`: （Python 3.8+）为任务指定一个名称，便于调试。 |
-| **`asyncio.gather(*aws, return_exceptions=False)`** | **并发运行** 多个异步任务（ `aws` 可接受协程、任务等），并等待所有完成，返回结果列表。 | `*aws`: 可变参数，传入多个异步对象。   `return_exceptions`: 默认为 `False` ，任何任务抛出异常都会立即传播给 `gather` 的调用者。设为 `True` 时，异常会作为结果的一部分返回。 |
-| **`asyncio.sleep(delay, result=None)`** | **异步地** 休眠指定秒数。这是与 `time.sleep` （阻塞）的关键区别。 | `delay`: 休眠的秒数。   `result`: 休眠结束后返回的值。 |
-| **`asyncio.wait(aws, *, timeout=None, return_when=ALL_COMPLETED)`** | 并发运行任务，并等待满足指定条件。返回两个集合 `(done, pending)` ，分别是已完成和未完成的任务。 | `aws`: 异步对象集合。   `timeout`: 超时时间（秒）。   `return_when`: 决定何时返回，可选： `FIRST_COMPLETED` （第一个完成）、 `FIRST_EXCEPTION` （第一个异常）、 `ALL_COMPLETED` （全部完成，默认）。 |
-| **`asyncio.to_thread(func, /, *args, **kwargs)`** | （Python 3.9+）将一个普通的、可能阻塞的同步函数放到一个单独的线程中运行，并返回一个可 `await` 的协程。用于处理 CPU 密集型或阻塞式 I/O。 | `func`: 要在线程中运行的同步函数。   `*args, **kwargs`: 传递给函数的参数。 |
+| 函数                                                                  | 主要作用                                                                               | 常用参数说明                                                                                                                                            |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`asyncio.run(coro, *, debug=False)`**                             | 运行一个顶层协程，管理事件循环的生命周期。是程序的主入口。                                                      | `coro`: 要运行的协程对象。   `debug`: 设为 `True` 可启用事件循环的调试模式。                                                                                              |
+| **`asyncio.create_task(coro, *, name=None)`**                       | 将协程包装成一个 **Task** 对象，并排入事件循环等待调度。这是实现并发的主要方式。                                      | `coro`: 要包装的协程对象。   `name`: （Python 3.8+）为任务指定一个名称，便于调试。                                                                                          |
+| **`asyncio.gather(*aws, return_exceptions=False)`**                 | **并发运行** 多个异步任务（ `aws` 可接受协程、任务等），并等待所有完成，返回结果列表。                                  | `*aws`: 可变参数，传入多个异步对象。   `return_exceptions`: 默认为 `False` ，任何任务抛出异常都会立即传播给 `gather` 的调用者。设为 `True` 时，异常会作为结果的一部分返回。                               |
+| **`asyncio.sleep(delay, result=None)`**                             | **异步地** 休眠指定秒数。这是与 `time.sleep` （阻塞）的关键区别。                                         | `delay`: 休眠的秒数。   `result`: 休眠结束后返回的值。                                                                                                            |
+| **`asyncio.wait(aws, *, timeout=None, return_when=ALL_COMPLETED)`** | 并发运行任务，并等待满足指定条件。返回两个集合 `(done, pending)` ，分别是已完成和未完成的任务。                          | `aws`: 异步对象集合。   `timeout`: 超时时间（秒）。   `return_when`: 决定何时返回，可选： `FIRST_COMPLETED` （第一个完成）、 `FIRST_EXCEPTION` （第一个异常）、 `ALL_COMPLETED` （全部完成，默认）。 |
+| **`asyncio.to_thread(func, /, *args, **kwargs)`**                   | （Python 3.9+）将一个普通的、可能阻塞的同步函数放到一个单独的线程中运行，并返回一个可 `await` 的协程。用于处理 CPU 密集型或阻塞式 I/O。 | `func`: 要在线程中运行的同步函数。   `*args, **kwargs`: 传递给函数的参数。                                                                                              |
 
 ### 可视化理解：异步任务调度流程
 
