@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
 **预期运行结果** ：
 
-```
+```text
 开始获取: https://example.com/1
 完成获取: https://example.com/1
 开始获取: https://example.com/2
