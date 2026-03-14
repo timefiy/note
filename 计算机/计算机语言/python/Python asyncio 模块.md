@@ -45,24 +45,25 @@ asyncio 提供了一种高效的方式来处理并发任务，特别适用于 I/
 协程是 `asyncio` 的核心概念之一。它是一个特殊的函数，==可以在执行过程中暂停，并在稍后恢复执行==。协程通过 `async def` 关键字定义，并通过 `await` 关键字暂停执行，等待异步操作完成。
 
 ## 实例
+
 ```python
 import asyncio  
   
-async def say\_hello():  
-print("Hello")  
-await asyncio.sleep(1)  # 协程
-print("World")  
+async def say_hello():  
+    print("Hello")  
+    await asyncio.sleep(1)  # 协程
+    print("World")  
 ```
-
 
 ### 2\. 事件循环（Event Loop）
 
 事件循环是 `asyncio` 的核心组件，负责调度和执行协程。==它不断地检查是否有任务需要执行，并在任务完成后调用相应的回调函数==。
 
-## 实例
+## 实例 - 事件循环
+
 ```python
 async def main():  
-await say\_hello()  
+    await say_hello()  
   
 asyncio.run(main())  
 ```
@@ -73,9 +74,11 @@ asyncio.run(main())
 
 ## 实例
 
+```python
 async def main():  
-task = asyncio.create\_task(say\_hello())  
-await task  
+    task = asyncio.create_task(say_hello())  
+    await task  
+```
 
 ### 4\. Future
 
@@ -83,9 +86,11 @@ await task
 
 ## 实例
 
+```python
 async def main():  
-future = asyncio.Future()  
-await future  
+    future = asyncio.Future()  
+    await future  
+```
 
 ### 基础用法与代码示例
 
@@ -97,31 +102,33 @@ await future
 
 ## 实例
 
+```python
 import time  
 import requests  
   
-def fetch\_url(url):  
-"""模拟一个耗时的网络请求（同步版本）"""  
-print(f"开始获取: {url}")  
-time.sleep(2) # 模拟 2 秒网络延迟  
-print(f"完成获取: {url}")  
-return f"来自 {url} 的数据"  
+def fetch_url(url):  
+    """模拟一个耗时的网络请求（同步版本）"""  
+    print(f"开始获取: {url}")  
+    time.sleep(2) # 模拟 2 秒网络延迟  
+    print(f"完成获取: {url}")  
+    return f"来自 {url} 的数据"  
   
-def main\_sync():  
-urls = \['https://example.com/1', 'https://example.com/2', 'https://example.com/3'\]  
-results = \[\]  
-start = time.time()  
+def main_sync():  
+    urls = ['https://example.com/1', 'https://example.com/2', 'https://example.com/3']  
+    results = []  
+    start = time.time()  
   
-for url in urls:  
-result = fetch\_url(url) # 必须等上一个完成才能开始下一个  
-results.append(result)  
+    for url in urls:  
+        result = fetch_url(url) # 必须等上一个完成才能开始下一个  
+        results.append(result)  
   
-end = time.time()  
-print(f"同步版本总耗时: {end - start:.2f} 秒")  
-print(f"结果: {results}")  
+    end = time.time()  
+    print(f"同步版本总耗时: {end - start:.2f} 秒")  
+    print(f"结果: {results}")  
   
-if \_\_name\_\_ == "\_\_main\_\_":  
-main\_sync()  
+if __name__ == "__main__":  
+    main_sync()  
+```
 
 **预期运行结果** ：
 
@@ -142,51 +149,53 @@ main\_sync()
 
 我们需要用 `aiohttp` 库来替代 `requests` 进行异步 HTTP 请求。首先安装它： `pip install aiohttp` 。
 
-## 实例
+## 实例 - 异步版本
 
+```python
 import asyncio  
 import aiohttp  
 import time  
   
-async def fetch\_url\_async(session, url):  
-"""模拟一个耗时的网络请求（异步版本）"""  
-print(f"开始异步获取: {url}")  
-\# 注意：这里我们使用 aiohttp 的异步 get 方法，并用 await 等待  
-async with session.get(url) as response:  
-\# 模拟处理响应也需要时间  
-await asyncio.sleep(2) # 使用 asyncio.sleep 模拟 I/O 等待，它不会阻塞线程  
-text = await response.text()  
-print(f"完成异步获取: {url}")  
-return f"来自 {url} 的数据 (长度: {len(text)})"  
+async def fetch_url_async(session, url):  
+    """模拟一个耗时的网络请求（异步版本）"""  
+    print(f"开始异步获取: {url}")  
+    # 注意：这里我们使用 aiohttp 的异步 get 方法，并用 await 等待  
+    async with session.get(url) as response:  
+        # 模拟处理响应也需要时间  
+        await asyncio.sleep(2) # 使用 asyncio.sleep 模拟 I/O 等待，它不会阻塞线程  
+        text = await response.text()  
+        print(f"完成异步获取: {url}")  
+        return f"来自 {url} 的数据 (长度: {len(text)})"  
   
-async def main\_async():  
-urls = \['https://httpbin.org/get', 'https://httpbin.org/delay/1', 'https://httpbin.org/headers'\]  
+async def main_async():  
+    urls = ['https://httpbin.org/get', 'https://httpbin.org/delay/1', 'https://httpbin.org/headers']  
   
-async with aiohttp.ClientSession() as session: # 创建异步 HTTP 会话  
-\# 为每个 URL 创建一个任务（Task）  
-tasks = \[\]  
-for url in urls:  
-\# create\_task 会将协程加入事件循环，立即开始调度  
-task = asyncio.create\_task(fetch\_url\_async(session, url))  
-tasks.append(task)  
+    async with aiohttp.ClientSession() as session: # 创建异步 HTTP 会话  
+        # 为每个 URL 创建一个任务（Task）  
+        tasks = []  
+        for url in urls:  
+            # create_task 会将协程加入事件循环，立即开始调度  
+            task = asyncio.create_task(fetch_url_async(session, url))  
+            tasks.append(task)  
   
-print("所有任务已创建，开始并发执行...")  
+        print("所有任务已创建，开始并发执行...")  
   
-\# 使用 asyncio.gather 并发运行所有任务，并等待它们全部完成  
-\# gather 返回一个结果列表，顺序与传入的任务顺序一致  
-results = await asyncio.gather(\*tasks)  
+        # 使用 asyncio.gather 并发运行所有任务，并等待它们全部完成  
+        # gather 返回一个结果列表，顺序与传入的任务顺序一致  
+        results = await asyncio.gather(*tasks)  
   
-return results  
+        return results  
   
-if \_\_name\_\_ == "\_\_main\_\_":  
-start = time.time()  
-\# asyncio.run() 是启动事件循环并运行顶层协程的简便方法  
-final\_results = asyncio.run(main\_async())  
-end = time.time()  
+if __name__ == "__main__":  
+    start = time.time()  
+    # asyncio.run() 是启动事件循环并运行顶层协程的简便方法  
+    final_results = asyncio.run(main_async())  
+    end = time.time()  
   
-print(f"\\n异步版本总耗时: {end - start:.2f} 秒")  
-for res in final\_results:  
-print(res)  
+    print(f"\n异步版本总耗时: {end - start:.2f} 秒")  
+    for res in final_results:  
+        print(res)  
+```
 
 **预期运行结果** ：
 
@@ -243,14 +252,16 @@ print(res)
 
 ## 实例
 
+```python
 import asyncio  
   
 async def main():  
-print("Start")  
-await asyncio.sleep(1)  
-print("End")  
+    print("Start")  
+    await asyncio.sleep(1)  
+    print("End")  
   
 asyncio.run(main())  
+```
 
 ### 2\. 并发执行多个任务
 
@@ -258,22 +269,24 @@ asyncio.run(main())
 
 ## 实例
 
+```python
 import asyncio  
   
 async def task1():  
-print("Task 1 started")  
-await asyncio.sleep(1)  
-print("Task 1 finished")  
+    print("Task 1 started")  
+    await asyncio.sleep(1)  
+    print("Task 1 finished")  
   
 async def task2():  
-print("Task 2 started")  
-await asyncio.sleep(2)  
-print("Task 2 finished")  
+    print("Task 2 started")  
+    await asyncio.sleep(2)  
+    print("Task 2 finished")  
   
 async def main():  
-await asyncio.gather(task1(), task2())  
+    await asyncio.gather(task1(), task2())  
   
 asyncio.run(main())  
+```
 
 ### 3\. 超时控制
 
@@ -281,19 +294,21 @@ asyncio.run(main())
 
 ## 实例
 
+```python
 import asyncio  
   
-async def long\_task():  
-await asyncio.sleep(10)  
-print("Task finished")  
+async def long_task():  
+    await asyncio.sleep(10)  
+    print("Task finished")  
   
 async def main():  
-try:  
-await asyncio.wait\_for(long\_task(), timeout=5)  
-except asyncio.TimeoutError:  
-print("Task timed out")  
+    try:  
+        await asyncio.wait_for(long_task(), timeout=5)  
+    except asyncio.TimeoutError:  
+        print("Task timed out")  
   
 asyncio.run(main())  
+```
 
 ---
 
@@ -373,55 +388,60 @@ asyncio.run(main())
 
 ## 实例
 
+```python
 import asyncio  
   
 async def hello():  
-print("Hello")  
-await asyncio.sleep(1)  
-print("World")  
+    print("Hello")  
+    await asyncio.sleep(1)  
+    print("World")  
   
 asyncio.run(hello()) # Python 3.7+  
+```
 
-2\. 并发执行任务
+### 2\. 并发执行任务
 
 ## 实例
 
+```python
 async def fetch(url):  
-print(f"Fetching {url}")  
-await asyncio.sleep(2)  
-return f"Data from {url}"  
+    print(f"Fetching {url}")  
+    await asyncio.sleep(2)  
+    return f"Data from {url}"  
   
 async def main():  
-results = await asyncio.gather(  
-fetch("url1.com"),  
-fetch("url2.com")  
-)  
-print(results)  
+    results = await asyncio.gather(  
+        fetch("url1.com"),  
+        fetch("url2.com")  
+    )  
+    print(results)  
   
 asyncio.run(main())  
+```
 
-3\. 使用异步队列
+### 3\. 使用异步队列
 
 ## 实例
 
+```python
 async def producer(queue):  
-for i in range(5):  
-await queue.put(i)  
-await asyncio.sleep(0.1)  
+    for i in range(5):  
+        await queue.put(i)  
+        await asyncio.sleep(0.1)  
   
 async def consumer(queue):  
-while True:  
-item = await queue.get()  
-print(f"Consumed {item}")  
-queue.task\_done()  
+    while True:  
+        item = await queue.get()  
+        print(f"Consumed {item}")  
+        queue.task_done()  
   
 async def main():  
-queue = asyncio.Queue()  
-await asyncio.gather(  
-producer(queue),  
-consumer(queue)  
-)  
-
+    queue = asyncio.Queue()  
+    await asyncio.gather(  
+        producer(queue),  
+        consumer(queue)  
+    )  
+```
 ---
 
 ### 注意事项
