@@ -12,7 +12,8 @@ tags:
   - clippings_update
 ---
 # Python asyncio 模块
-## Python asyncio 模块
+
+## Python asyncio 模块简介
 
 `asyncio` 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。
 
@@ -49,21 +50,22 @@ import asyncio
   
 async def say\_hello():  
 print("Hello")  
-await asyncio.sleep(1)  
+await asyncio.sleep(1)  # 协程
 print("World")  
 ```
 
 
 ### 2\. 事件循环（Event Loop）
 
-事件循环是 `asyncio` 的核心组件，负责调度和执行协程。它不断地检查是否有任务需要执行，并在任务完成后调用相应的回调函数。
+事件循环是 `asyncio` 的核心组件，负责调度和执行协程。==它不断地检查是否有任务需要执行，并在任务完成后调用相应的回调函数==。
 
 ## 实例
-
+```python
 async def main():  
 await say\_hello()  
   
 asyncio.run(main())  
+```
 
 ### 3\. 任务（Task）
 
