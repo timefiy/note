@@ -1,13 +1,15 @@
 ---
-title: "Python asyncio 模块 | 菜鸟教程"
-source: "https://www.runoob.com/python3/python-asyncio.html"
+title: Python asyncio 模块 | 菜鸟教程
+source: https://www.runoob.com/python3/python-asyncio.html
 author:
+  - 菜鸟教程，timefiy
 published:
 created: 2026-03-14
-description: "Python asyncio 模块  asyncio 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。asyncio 提供了一种高效的方式来处理并发任务，特别适用于 I/O 密集型操作，如网络请求、文件读写等。通过使用 asyncio，你可以在单线程中同时处理多个任务，而无需使用多线程或多进程。  为什么需要 asyncio？ 在传统的同步编程中，当一个任务需要等待 I/O 操作（如网络请求）完成时，程序会阻塞，.."
+description: Python asyncio 模块  asyncio 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。asyncio 提供了一种高效的方式来处理并发任务，特别适用于 I/O 密集型操作，如网络请求、文件读写等。通过使用 asyncio，你可以在单线程中同时处理多个任务，而无需使用多线程或多进程。  为什么需要 asyncio？ 在传统的同步编程中，当一个任务需要等待 I/O 操作（如网络请求）完成时，程序会阻塞，..
 tags:
-  - "clippings"
+  - clippings
 ---
+# Python asyncio 模块  菜鸟教程
 ## Python asyncio 模块
 
 `asyncio` 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。
