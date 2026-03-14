@@ -7,9 +7,11 @@ published:
 created: 2026-03-14
 description: Python asyncio 模块  asyncio 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。asyncio 提供了一种高效的方式来处理并发任务，特别适用于 I/O 密集型操作，如网络请求、文件读写等。通过使用 asyncio，你可以在单线程中同时处理多个任务，而无需使用多线程或多进程。  为什么需要 asyncio？ 在传统的同步编程中，当一个任务需要等待 I/O 操作（如网络请求）完成时，程序会阻塞，..
 tags:
-  - clippings
+  - async
+  - 异步编程
+  - clippings_update
 ---
-# Python asyncio 模块  菜鸟教程
+# Python asyncio 模块
 ## Python asyncio 模块
 
 `asyncio` 是 Python 标准库中的一个模块，用于编写异步 I/O 操作的代码。
@@ -39,16 +41,18 @@ asyncio 提供了一种高效的方式来处理并发任务，特别适用于 I/
 
 ### 1\. 协程（Coroutine）
 
-协程是 `asyncio` 的核心概念之一。它是一个特殊的函数，可以在执行过程中暂停，并在稍后恢复执行。协程通过 `async def` 关键字定义，并通过 `await` 关键字暂停执行，等待异步操作完成。
+协程是 `asyncio` 的核心概念之一。它是一个特殊的函数，==可以在执行过程中暂停，并在稍后恢复执行==。协程通过 `async def` 关键字定义，并通过 `await` 关键字暂停执行，等待异步操作完成。
 
 ## 实例
-
+```python
 import asyncio  
   
 async def say\_hello():  
 print("Hello")  
 await asyncio.sleep(1)  
 print("World")  
+```
+
 
 ### 2\. 事件循环（Event Loop）
 
