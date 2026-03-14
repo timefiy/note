@@ -382,11 +382,9 @@ asyncio.run(main())
 | **`asyncio.shield(coro)`** | 保护任务不被取消 | `await asyncio.shield(critical_task)` |
 | **`asyncio.wait_for(coro, timeout)`** | 带超时的等待 | `try: await asyncio.wait_for(task, 5)` |
 
-### 实例
-
-1\. 基本协程示例
-
 ## 实例
+
+### 1\. 基本协程示例
 
 ```python
 import asyncio  
@@ -400,8 +398,6 @@ asyncio.run(hello()) # Python 3.7+
 ```
 
 ### 2\. 并发执行任务
-
-## 实例
 
 ```python
 async def fetch(url):  
@@ -420,8 +416,6 @@ asyncio.run(main())
 ```
 
 ### 3\. 使用异步队列
-
-## 实例
 
 ```python
 async def producer(queue):  
