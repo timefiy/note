@@ -19,8 +19,14 @@ public:
         n = grid[0].size();
         int res = 1;
         memu = vector<vector<pair<int, int>>>(m, vector<pair<int, int>>(n, {0, 0}));
-
-
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                if (i == 0 && j == 0){
+                    memu[i][j] = {grid[i][j], grid[i][j]};
+                }
+                else
+            }
+        }
         return res % MOD;
     }
 };
