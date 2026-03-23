@@ -4,5 +4,37 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"chrono": "cpp",
+			"vector": "cpp",
+			"functional": "cpp",
+			"random": "cpp",
+			"flat_map": "cpp",
+			"flat_set": "cpp",
+			"format": "cpp",
+			"memory_resource": "cpp",
+			"ranges": "cpp",
+			"regex": "cpp",
+			"complex": "cpp",
+			"bitset": "cpp",
+			"deque": "cpp",
+			"forward_list": "cpp",
+			"list": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"algorithm": "cpp",
+			"future": "cpp",
+			"generator": "cpp",
+			"istream": "cpp",
+			"numeric": "cpp",
+			"scoped_allocator": "cpp",
+			"cmath": "cpp",
+			"tuple": "cpp",
+			"utility": "cpp",
+			"type_traits": "cpp"
+		}
+	}
 }
