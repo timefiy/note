@@ -1,5 +1,8 @@
 # include <bits/stdc++.h>
 using namespace std;
+
+const int MOD = 1e9 + 7;
+
 /*
  * @lc app=leetcode.cn id=1594 lang=cpp
  *
@@ -8,7 +11,7 @@ using namespace std;
 
 // @lc code=start
 class Solution {
-    vector<vector<int>> dp;
+    vector<vector<int>> memu;
     int m, n;
 public:
     int maxProductPath(vector<vector<int>>& grid) {
@@ -17,11 +20,14 @@ public:
         int res = 1;
         dp = vector<vector<int>>(m, vector<int>(n, 0));
 
-        return res % 1e9 + 7;
+        return res % MOD;
     }
 
     void dp(int i, int j){
-        if
+        if(i == m - 1 && j == n - 1){
+            dp[i][j] = grid[i][j];
+            return;
+        }
     }
 };
 // @lc code=end
