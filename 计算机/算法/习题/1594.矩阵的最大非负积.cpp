@@ -24,7 +24,9 @@ public:
                 if (i == 0 && j == 0){
                     memu[i][j] = {grid[i][j], grid[i][j]};
                 }
-                else
+                else{
+                    
+                }
             }
         }
         return res % MOD;
