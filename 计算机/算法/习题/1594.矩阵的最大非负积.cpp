@@ -11,23 +11,17 @@ const int MOD = 1e9 + 7;
 
 // @lc code=start
 class Solution {
-    vector<vector<int>> memu;
+    vector<vector<pair<int, int>>> memu;
     int m, n;
 public:
     int maxProductPath(vector<vector<int>>& grid) {
         m = grid.size();
         n = grid[0].size();
         int res = 1;
-        memu = vector<vector<int>>(m, vector<int>(n, 0));
+        memu = vector<vector<pair<int, int>>>(m, vector<pair<int, int>>(n, {0, 0}));
+
 
         return res % MOD;
-    }
-
-    void dp(int i, int j){
-        if(i == m - 1 && j == n - 1){
-            memu[i][j] = grid[i][j];
-            return;
-        }
     }
 };
 // @lc code=end
