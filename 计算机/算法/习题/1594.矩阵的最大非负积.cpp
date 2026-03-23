@@ -25,11 +25,18 @@ public:
                     memu[i][j] = {grid[i][j], grid[i][j]};
                 }
                 else{
-                    
+                    if (grid[i][j] >= 0){
+                        memu[i][j].first = max(memu[i - 1][j].first * grid[i][j], memu[i][j - 1].first * grid[i][j]);
+                        memu[i][j].second = min(memu[i - 1][j].second * grid[i][j], memu[i][j - 1].second * grid[i][j]);
+                    }
+                    else{
+                        memu[i][j].first = max(memu[i - 1][j].second * grid[i][j], memu[i][j - 1].second * grid[i][j]);
+                        memu[i][j].second = min(memu[i - 1][j].first * grid[i][j], memu[i][j - 1].first * grid[i][j]);
+                    }
                 }
             }
         }
-        return res % MOD;
+        return memu[m - 1][n - 1].first % MOD;
     }
 };
 // @lc code=end
