@@ -18,14 +18,14 @@ public:
         m = grid.size();
         n = grid[0].size();
         int res = 1;
-        dp = vector<vector<int>>(m, vector<int>(n, 0));
+        memu = vector<vector<int>>(m, vector<int>(n, 0));
 
         return res % MOD;
     }
 
     void dp(int i, int j){
         if(i == m - 1 && j == n - 1){
-            dp[i][j] = grid[i][j];
+            memu[i][j] = grid[i][j];
             return;
         }
     }
