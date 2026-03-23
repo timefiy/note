@@ -9,16 +9,20 @@ using namespace std;
 // @lc code=start
 class Solution {
     vector<vector<int>> dp;
+    int m, n;
 public:
     int maxProductPath(vector<vector<int>>& grid) {
-        int m = grid.size(), n = grid[0].size();
+        m = grid.size();
+        n = grid[0].size();
         int res = 1;
         dp = vector<vector<int>>(m, vector<int>(n, 0));
 
         return res % 1e9 + 7;
     }
 
-    void dp()
+    void dp(int i, int j){
+        if
+    }
 };
 // @lc code=end
 
