@@ -10,7 +10,10 @@ using namespace std;
 class Solution {
 public:
     int maxProductPath(vector<vector<int>>& grid) {
-        
+        int m = grid.size(), n = grid[0].size();
+        int res = 1;
+
+        return res % 1e9 + 7;
     }
 };
 // @lc code=end
