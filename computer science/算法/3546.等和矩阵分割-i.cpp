@@ -21,15 +21,15 @@ public:
                 colSum[j] += grid[i][j];
             }
         }
-        int total = 0;
+        long long total = 0;
         for (int i = 0; i < m; i++)
         {
             total += rowSum[i];
         }
         
-        int a = total / 2;
+        long long a = total / 2;
 
-        int sum = 0;
+        long long sum = 0;
         for (int i = 0; i < m; i++)
         {
             sum += rowSum[i];
