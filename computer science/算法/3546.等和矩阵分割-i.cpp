@@ -21,7 +21,33 @@ public:
                 colSum[j] += grid[i][j];
             }
         }
+        int total = 0;
+        for (int i = 0; i < m; i++)
+        {
+            total += rowSum[i];
+        }
         
+        int a = total / 2;
+
+        int sum = 0;
+        for (int i = 0; i < m; i++)
+        {
+            sum += rowSum[i];
+            if (sum == a)
+            {
+                return true;
+            }
+        }
+        sum = 0;
+        for (int j = 0; j < n; j++)
+        {
+            sum += colSum[j];
+            if (sum == a)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 };
 // @lc code=end
