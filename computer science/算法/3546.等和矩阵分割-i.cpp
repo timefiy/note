@@ -28,6 +28,10 @@ public:
         {
             total += rowSum[i];
         }
+        if (total % 2 != 0)
+        {
+            return false;
+        }
         
         long long a = total / 2;
 
