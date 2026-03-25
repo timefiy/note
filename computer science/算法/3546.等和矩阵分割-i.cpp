@@ -13,6 +13,7 @@ public:
     bool canPartitionGrid(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size();
         vector<int> rowSum(m), colSum(n);
+        
         for (int i = 0; i < m; i++)
         {
             for (int j = 0; j < n; j++)
@@ -21,6 +22,7 @@ public:
                 colSum[j] += grid[i][j];
             }
         }
+
         long long total = 0;
         for (int i = 0; i < m; i++)
         {
@@ -30,23 +32,32 @@ public:
         long long a = total / 2;
 
         long long sum = 0;
-        for (int i = 0; i < m; i++)
-        {
-            sum += rowSum[i];
-            if (sum == a)
+        if(n!= 1){
+            for (int i = 0; i < m; i++)
             {
-                return true;
+                sum += rowSum[i];
+                if (sum == a)
+                {
+                    cout << "row: " << i << endl;
+                    return true;
+                }
             }
         }
+        
+
         sum = 0;
-        for (int j = 0; j < n; j++)
-        {
-            sum += colSum[j];
-            if (sum == a)
+        if(m != 1){
+            for (int j = 0; j < n; j++)
             {
-                return true;
+                sum += colSum[j];
+                if (sum == a)
+                {
+                    cout << "col: " << j << endl;
+                    return true;
+                }
             }
         }
+        
         return false;
     }
 };
