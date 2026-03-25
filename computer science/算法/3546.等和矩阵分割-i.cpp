@@ -36,7 +36,7 @@ public:
         long long a = total / 2;
 
         long long sum = 0;
-        if(n!= 1){
+        if(m!= 1){
             for (int i = 0; i < m; i++)
             {
                 sum += rowSum[i];
@@ -49,7 +49,7 @@ public:
         
 
         sum = 0;
-        if(m != 1){
+        if(n != 1){
             for (int j = 0; j < n; j++)
             {
                 sum += colSum[j];
