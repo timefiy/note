@@ -87,7 +87,8 @@ fn main() {
     
     // 🚩 编译错误点！
     // 如果你取消下面这一行的注释，Rust 编译器会报错。
-    // 因为 s.clear() 需要“可变借用”，而 println! 里的 word 还在持有“不可变借用”。
+    // 因为 s.clear() 是可变引用
+	// 但是first_word是不可变引用
     // s.clear(); 
 
     println!("The first word is: {}", word);
