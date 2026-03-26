@@ -77,3 +77,34 @@ let s = "你好"; // "你" 占 3 字节, "好" 占 3 字节，总共 6 字节
 ```
 
 ## 解决问题
+
+```rust
+fn main() {
+    let mut s = String::from("hello world");
+
+    // 现在 word 是一个 &str（字符串切片），它“借用”了 s 的一部分
+    let word = first_word(&s);
+    
+    // 🚩 编译错误点！
+    // 如果你取消下面这一行的注释，Rust 编译器会报错。
+    // 因为 s.clear() 需要“可变借用”，而 println! 里的 word 还在持有“不可变借用”。
+    // s.clear(); 
+
+    println!("The first word is: {}", word);
+}
+
+// 修改返回值类型为 &str
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+    
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            // 发现空格，返回从开头到空格位置的切片
+            return &s[0..i];
+        }
+    }
+
+    // 没发现空格，返回整个字符串切片
+    &s[..]
+}
+```
