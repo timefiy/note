@@ -53,8 +53,20 @@ fn first(s: &str) -> usize {
 ```rust
 fn main() {
 	let s = String::from("hello world");
+
+	// hello
 	let slice = &s[0..5];
-	# let slice = &s[..5];
+	// let slice = &s[..5];
+
+	// world
+	let slice = &s[6..11];
+	// let slice = &s[6..];
+
+	// hello world
+	let slice = &s[..];
+
 	println!("slice: {}", slice);
 }
 ```
+
+*注意*
