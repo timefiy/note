@@ -14,7 +14,6 @@ fn main() {
     s.clear();
 	# 即使s被清空，但是word的值任然为5
     println!("The first word is: {}", word);
-
 }
 
   
