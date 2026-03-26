@@ -20,12 +20,12 @@ fn main() {
 }
 
 fn first(s: &str) -> usize {
-	# 将字符串转化为字节切片
+	// 将字符串转化为字节切片
     let bytes = s.as_bytes();
     
-	# 遍历字节切片
-	# iter：迭代器
-	# enumerate：枚举
+	// 遍历字节切片
+	// iter：迭代器
+	// enumerate：枚举
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return i;
@@ -109,3 +109,7 @@ fn first_word(s: &str) -> &str {
     &s[..]
 }
 ```
+
+## 字符串补充
+
+- 字符串字面值就是切片，被直接存储在二进制程序中
