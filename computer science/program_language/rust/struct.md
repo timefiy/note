@@ -7,6 +7,9 @@ tags:
 
 ## 结构体定义
 
+- 使用struct关键字，并命名
+- 在花括号内，为所有字段（FIeld）定义名称和类型
+
 ```rust
 struct Site {
     domain: String,
@@ -24,21 +27,21 @@ struct Site {
 ## 结构体实例化
 
 ```rust
-let runoob = Site {
-    domain: String::from("www.runoob.com"),
-    name: String::from("RUNOOB"),
+let site1 = Site {
+    name: String::from("Example"),
     nation: String::from("China"),
     found: 2013,
 };
 ```
 
+**补充**：没有必要按照声明的顺序实例
 字段名与变量名相同可以简写：
 
 ```rust
-let domain = String::from("www.runoob.com");
-let name = String::from("RUNOOB");
+let domain = String::from("example.com");
+let name = String::from("Example");
 
-let runoob = Site {
+let site1 = Site {
     domain,
     name,
     nation: String::from("China"),
@@ -49,11 +52,13 @@ let runoob = Site {
 结构体更新语法（`..`）：
 
 ```rust
-let site = Site {
-    domain: String::from("www.runoob.com"),
-    name: String::from("RUNOOB"),
-    ..runoob
+let site2 = Site {
+    domain: String::from("example.org"),
+    name: String::from("Example 2"),
+    ..site1
 };
+
+
 ```
 
 ## 元组结构体
