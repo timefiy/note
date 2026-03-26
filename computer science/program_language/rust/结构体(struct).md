@@ -145,9 +145,3 @@ fn main() {
 ```
 
 关联函数在 `impl` 块中定义，但没有 `self` 参数。
-
-## 单元结构体
-
-```rust
-struct UnitStruct;
-```
