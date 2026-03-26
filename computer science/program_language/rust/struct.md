@@ -52,11 +52,11 @@ let site1 = Site {
 结构体更新语法（`..`）：
 
 ```rust
-let mut site2 = site1;
-
 let site2 = Site {
     domain: String::from("example.org"),
     name: String::from("Example 2"),
+    // 自动把 site1 中剩余的字段填充过来
+    // site1失效
     ..site1
 }; 
 ```
