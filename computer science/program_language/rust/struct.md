@@ -52,13 +52,13 @@ let site1 = Site {
 结构体更新语法（`..`）：
 
 ```rust
+let mut site2 = site1;
+
 let site2 = Site {
     domain: String::from("example.org"),
     name: String::from("Example 2"),
     ..site1
-};
-
-
+}; 
 ```
 
 ## 元组结构体
