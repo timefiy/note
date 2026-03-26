@@ -13,8 +13,9 @@ fn main() {
 
     let word = first(&s);
     
+	// 当 first 函数执行完毕并返回 5 时，那个传进去的不可变引用 &s 生命周期就结束了（读锁被释放了）
     s.clear();
-	# 即使s被清空，但是word的值任然为5
+	// 即使s被清空，但是word的值任然为5
     println!("The first word is: {}", word);
 }
 
