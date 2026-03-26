@@ -10,4 +10,5 @@ fn first(s: &str) -> usize {
             return i;
         }
     }
+    s.len()
 }

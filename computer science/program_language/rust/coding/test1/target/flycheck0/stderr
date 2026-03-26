@@ -1,5 +1,5 @@
-   0.029025500s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint: fingerprint error for test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1)/Check { test: false }/TargetInner { name: "test1", doc: true, ..: with_path("E:\\note\\computer science\\program_language\\rust\\coding\\test1\\src\\main.rs", Edition2024) }
-   0.029081000s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\note\computer science\program_language\rust\coding\test1\target\debug\.fingerprint\test1-2beb2e760b6a0252\bin-test1`
+   0.031025200s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint: fingerprint error for test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1)/Check { test: false }/TargetInner { name: "test1", doc: true, ..: with_path("E:\\note\\computer science\\program_language\\rust\\coding\\test1\\src\\main.rs", Edition2024) }
+   0.031074500s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\note\computer science\program_language\rust\coding\test1\target\debug\.fingerprint\test1-2beb2e760b6a0252\bin-test1`
 
 Caused by:
     系统找不到指定的文件。 (os error 2)
@@ -26,8 +26,8 @@ Stack backtrace:
   18: git_midx_writer_dump
   19: BaseThreadInitThunk
   20: RtlUserThreadStart
-   0.044734300s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint: fingerprint error for test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1)/Check { test: true }/TargetInner { name: "test1", doc: true, ..: with_path("E:\\note\\computer science\\program_language\\rust\\coding\\test1\\src\\main.rs", Edition2024) }
-   0.044755400s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\note\computer science\program_language\rust\coding\test1\target\debug\.fingerprint\test1-9beb037e046c023c\test-bin-test1`
+   0.047877300s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint: fingerprint error for test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1)/Check { test: true }/TargetInner { name: "test1", doc: true, ..: with_path("E:\\note\\computer science\\program_language\\rust\\coding\\test1\\src\\main.rs", Edition2024) }
+   0.047897600s  INFO prepare_target{force=false package_id=test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1) target="test1"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\note\computer science\program_language\rust\coding\test1\target\debug\.fingerprint\test1-9beb037e046c023c\test-bin-test1`
 
 Caused by:
     系统找不到指定的文件。 (os error 2)
@@ -55,6 +55,4 @@ Stack backtrace:
   19: BaseThreadInitThunk
   20: RtlUserThreadStart
     Checking test1 v0.1.0 (E:\note\computer science\program_language\rust\coding\test1)
-error: could not compile `test1` (bin "test1" test) due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `test1` (bin "test1") due to 1 previous error
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.25s
