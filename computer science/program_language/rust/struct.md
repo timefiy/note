@@ -63,6 +63,8 @@ let site2 = Site {
 
 ## 元组结构体
 
+元组结构体（Tuple Struct）是一种简单的结构体，它的字段没有名称，只有类型。
+
 ```rust
 struct Color(u8, u8, u8);
 struct Point(f64, f64);
@@ -72,6 +74,16 @@ let origin = Point(0.0, 0.0);
 
 println!("black = ({}, {}, {})", black.0, black.1, black.2);
 println!("origin = ({}, {})", origin.0, origin.1);
+```
+
+## unit_Like Struct
+
+unit_Like Struct 是一种简单的结构体，它的字段没有名称，只有类型。
+
+```rust
+struct UnitStruct;
+let unit_struct = UnitStruct;
+println!("unit_struct = {:?}", unit_struct);
 ```
 
 ## Debug 输出
