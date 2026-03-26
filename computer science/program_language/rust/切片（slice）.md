@@ -16,12 +16,13 @@ fn main() {
     println!("The first word is: {}", word);
 }
 
-  
-
 fn first(s: &str) -> usize {
 	# 将字符串转化为字节切片
     let bytes = s.as_bytes();
     
+	# 遍历字节切片
+	# iter：迭代器
+	# enumerate：枚举
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return i;
