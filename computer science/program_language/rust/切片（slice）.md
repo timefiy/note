@@ -5,6 +5,8 @@ tags:
 
 # 切片（slice）
 
+## 引子
+
 ```rust
 fn main() {
     let mut s = String::from("hello world");
@@ -31,3 +33,9 @@ fn first(s: &str) -> usize {
     s.len()
 }
 ```
+
+问题：如果被清空后。使用word作为索引，那么会发生什么？
+
+答案：会发生编译错误，因为s已经被清空，不再有效。
+
+## 字符串切片
