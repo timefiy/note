@@ -1,5 +1,11 @@
 fn main() {
-    println!("Hello, world!");
+    let mut s = String::from("hello world");
+
+    let word = first(&s);
+
+    s.clear();
+
+    println!("The first word is: {}", word);
 }
 
 fn first(s: &str) -> usize {
