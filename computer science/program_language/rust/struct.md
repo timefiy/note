@@ -80,9 +80,13 @@ println!("origin = ({}, {})", origin.0, origin.1);
 
 unit_Like Struct 是一种简单的结构体，它的字段没有名称，只有类型。
 
+**使用场景**在某个类型上实现某个trait，但里面没有要存的数据
+
 ```rust
 struct UnitStruct;
 let unit_struct = UnitStruct;
+// 这里的{:?}是用于格式化输出，类似于Python的print(f"unit_struct = {unit_struct}")
+// Rust 提供了 {:?} 格式化符号，它对应的是 Debug 特征。
 println!("unit_struct = {:?}", unit_struct);
 ```
 
