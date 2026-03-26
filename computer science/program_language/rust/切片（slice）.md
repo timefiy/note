@@ -43,9 +43,18 @@ fn first(s: &str) -> usize {
 - 定义：
 	- 字符串切片是指指向字符串中一部分内容的引用
 - 形式：
-	```
-		
+	```rust
+	[start..end]
+	[start..]
+	[..end]
+	[..]
 	```
 
 ```rust
+fn main() {
+	let s = String::from("hello world");
+	let slice = &s[0..5];
+	# let slice = &s[..5];
+	println!("slice: {}", slice);
+}
 ```
