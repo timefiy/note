@@ -113,3 +113,7 @@ fn first_word(s: &str) -> &str {
 ## 字符串补充
 
 - 字符串字面值就是切片，被直接存储在二进制程序中
+```rust
+let s = "hello world";
+// s的类型是&str，执向二进制程序特定位置的切片
+```
