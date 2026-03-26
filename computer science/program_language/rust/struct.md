@@ -56,7 +56,7 @@ let site2 = Site {
     domain: String::from("example.org"),
     name: String::from("Example 2"),
     // 自动把 site1 中剩余的字段填充过来
-    // site1失效
+    // site1仍然有效，没有发生所有权的转移
     ..site1
 }; 
 ```
