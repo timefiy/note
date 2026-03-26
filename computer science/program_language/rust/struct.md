@@ -88,9 +88,9 @@ struct UnitStruct;
 
 fn main(){
     let unit_struct = UnitStruct;
-    // 这里的{:?}是用于格式化输出，类似于Python的print(f"unit_struct = {unit_struct}")
-    // Rust 提供了 {:?} 格式化符号，它对应的是 Debug 特征。
-    println!("unit_struct = {:?}", unit_struct);
+    // 这里的{:#?}是用于格式化输出，类似于Python的print(f"unit_struct = {unit_struct}")
+    // Rust 提供了 {:#?} 格式化符号，它对应的是 Debug 特征。
+    println!("unit_struct = {:#?}", unit_struct);
 }
 ```
 
