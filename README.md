@@ -16,4 +16,4 @@
 - obsidian-git：自动提交与推送
 - obsidian-custom-attachment-location：自定义附件路径
 - remotely-save：远程同步备份(因为中间的配置文件牵扯到密码，所以不展示)
-- obsidian-linter：检查笔记错误
+- obsidian-linter：格式化笔记
