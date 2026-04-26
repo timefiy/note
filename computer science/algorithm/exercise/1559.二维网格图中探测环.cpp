@@ -15,7 +15,7 @@ public:
         vector<vector<bool>> visited(m, vector<bool>(n, false));
 
         visited[0][0] = true;
-        return dfs(grid, 0, 0, visited, 0);
+        return dfs(grid, 0, 0, visited, 1, 1 ,1);
 
     }
 };
