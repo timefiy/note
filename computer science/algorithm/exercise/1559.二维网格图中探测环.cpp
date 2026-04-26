@@ -40,16 +40,13 @@ private:
 
             // 检查是否越界
             if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n) {
-                // 2. 核心逻辑：只走向那些字符与当前字符相同的格子
                 if (grid[nextX][nextY] == grid[x][y]) {
-                    
-                    // 3. 找到了环的条件：相邻格子已被访问，且不是我们刚刚走过来的那个格子
                     if (visited[nextX][nextY]) {
+                        // 如果访问过，并且不是上一个节点，则说明存在环
                         if (nextX != preX || nextY != preY) {
-                            return true; // 恭喜，发现了一个合法的环！
+                            return true;
                         }
-                    } 
-                    // 4. 如果没访问过，就继续以它为起点深度优先搜索
+                    }
                     else {
                         if (dfs(grid, nextX, nextY, visited, x, y)) {
                             return true;
