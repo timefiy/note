@@ -20,7 +20,7 @@ public:
     }
 };
 
-bool dfs(vector<vector<char>>& grid,int x,int y, vector<vector<bool>>& visited, int circle){
+bool dfs(vector<vector<char>>& grid,int x,int y, vector<vector<bool>>& visited, int circle, int preX , int preY){
     if(){
         return true;
     }
