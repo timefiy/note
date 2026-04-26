@@ -38,7 +38,7 @@ private:
             int nextX = x + d[0];
             int nextY = y + d[1];
 
-            // 1. 检查是否越界
+            // 检查是否越界
             if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n) {
                 // 2. 核心逻辑：只走向那些字符与当前字符相同的格子
                 if (grid[nextX][nextY] == grid[x][y]) {
