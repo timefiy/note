@@ -11,8 +11,18 @@ using namespace std;
 class Solution {
 public:
     bool containsCycle(vector<vector<char>>& grid) {
+        int m = grid.size(), n = grid[0].size();
+        vector<vector<bool>> visited(m, vector<bool>(n, false));
+
         
+
     }
 };
+
+bool dfs(vector<vector<char>>& grid,int x,int y, vector<vector<bool>>& visited, int circle){
+    
+    
+    return false;
+}
 // @lc code=end
 
