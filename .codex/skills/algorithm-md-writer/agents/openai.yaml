@@ -1,0 +1,4 @@
+interface:
+  display_name: "Algorithm MD Writer"
+  short_description: "Write Chinese algorithm markdown in this project's style"
+  default_prompt: "Create or update Chinese algorithm solution markdown files using this repository's established structure and wording style."
