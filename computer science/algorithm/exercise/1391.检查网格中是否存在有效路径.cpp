@@ -12,7 +12,7 @@ class Solution {
 public:
     bool hasValidPath(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size();
-        vector<vector<pair<int,vector<int>>>> dir = {{1,{0,1}},}
+        vector<pair<int,vector<int>>> dir = {{1,{0,1}},{2,{1,0}}}
     }
 };
 // @lc code=end
