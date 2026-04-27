@@ -11,7 +11,8 @@ using namespace std;
 class Solution {
 public:
     bool hasValidPath(vector<vector<int>>& grid) {
-        
+        int m = grid.size(), n = grid[0].size();
+        vector<vector<pair<int,vector<int>>>> dir = {{1,{0,1}},}
     }
 };
 // @lc code=end
