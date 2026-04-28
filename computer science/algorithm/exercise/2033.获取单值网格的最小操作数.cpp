@@ -20,7 +20,7 @@ public:
                 nums.push_back(grid[i][j]);
             }
         }
-
+        
         // 2. 余数校验（可行性判断）
         // 以第一个元素的余数为基准，检查所有元素
         int mod = nums[0] % x; 
