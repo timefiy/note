@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 /*
  * @lc app=leetcode.cn id=1665 lang=cpp
  *
