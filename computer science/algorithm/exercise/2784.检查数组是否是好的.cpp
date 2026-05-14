@@ -10,13 +10,16 @@ using namespace std;
 class Solution {
 public:
     bool isGood(vector<int>& nums) {
-        vector<int> count(nums.size() , 0);
+        int n = nums.size();
+        vector<int> count(n , 0);
         for (int i : nums)
         {
+            if (i >= n) {
+                return false;
+            }
             count[i]++;
         }
 
-        int n = nums.size();
         if (count[n - 1] != 2)
         {
             return false;
