@@ -13,9 +13,22 @@ public:
         vector<int> count(nums.size() , 0);
         for (int i : nums)
         {
-            /* code */
+            count[i]++;
         }
-        
+
+        int n = nums.size();
+        if (count(n - 1) != 2)
+        {
+            return false;
+        }
+        for (int i = 1; i < nums.size() - 1; i++)
+        {
+            if (count[i] != 1)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 };
 // @lc code=end
