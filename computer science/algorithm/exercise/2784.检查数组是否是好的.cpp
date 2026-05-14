@@ -10,6 +10,11 @@ using namespace std;
 class Solution {
 public:
     bool isGood(vector<int>& nums) {
+        vector<int> count(nums.size() , 0);
+        for (int i : nums)
+        {
+            /* code */
+        }
         
     }
 };
