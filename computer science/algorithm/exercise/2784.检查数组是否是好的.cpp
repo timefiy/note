@@ -17,7 +17,7 @@ public:
         }
 
         int n = nums.size();
-        if (count(n - 1) != 2)
+        if (count[n - 1] != 2)
         {
             return false;
         }
