@@ -20,11 +20,16 @@ public:
             if (nums[mid] > nums[mid + 1]) {
                 left = mid + 1;
             } if (nums[mid] == nums[mid + 1]){
-                for (int i = 0; i < nums.size()/2; i++)
+                for (int i = 1; i < nums.size()/2; i++)
                 {
-                    /* code */
+                    if (nums[mid + i] < nums[mid]) {
+                        return nums[mid + i];
+                        
+                    }
+                    if (nums[mid - i] < nums[mid]) {
+                        right = mid;
+                    }
                 }
-                
             } 
             else {
                 right = mid;
