@@ -2,9 +2,9 @@
 using namespace std;
 
 /*
- * @lc app=leetcode.cn id=153 lang=cpp
+ * @lc app=leetcode.cn id=154 lang=cpp
  *
- * [153] 寻找旋转排序数组中的最小值
+ * [154] 寻找旋转排序数组中的最小值 II
  */
 
 // @lc code=start
@@ -17,7 +17,7 @@ public:
         while (left < right) {
             int mid = left + (right - left) / 2; 
 
-            if (nums[mid] > nums[right]) {
+            if (nums[mid] > nums[mid - 1]) {
                 left = mid + 1;
             } else {
                 right = mid;
