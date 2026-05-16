@@ -19,7 +19,14 @@ public:
 
             if (nums[mid] > nums[mid + 1]) {
                 left = mid + 1;
-            } else {
+            } if (nums[mid] == nums[mid + 1]){
+                for (int i = 0; i < nums.size()/2; i++)
+                {
+                    /* code */
+                }
+                
+            } 
+            else {
                 right = mid;
             }
         }
