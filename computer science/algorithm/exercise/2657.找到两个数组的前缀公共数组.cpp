@@ -16,13 +16,25 @@ public:
 
         for (int i = 0; i < A.size(); i++)
         {
-            if
+            res[i] = res[i - 1];
+
+            if(map[A[i]] == 2){
+                res[i] = res[i] - 1;
+            }
+            if(map[B[i]] == 2){
+                res[i] = res[i] - 1;
+            }
 
             map[A[i]]++;
             map[B[i]]++;
 
+            if(map[A[i]] == 2){
+                res[i] = res[i] + 1;
+            }
+            if(map[B[i]] == 2){
+                res[i] = res[i] + 1;
+            }
         }
-        
         
         return res;
     }
