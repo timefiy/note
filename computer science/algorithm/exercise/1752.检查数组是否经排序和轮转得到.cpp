@@ -11,7 +11,8 @@ using namespace std;
 class Solution {
 public:
     bool check(vector<int>& nums) {
-        
+        vector<int> nums2 = nums;
+        sort(nums2.begin(), nums2.end());
     }
 };
 // @lc code=end
