@@ -11,6 +11,9 @@ using namespace std;
 class Solution {
 public:
     bool canReach(string s, int minJump, int maxJump) {
+        int n = s.size();
+        if(n == 1) return true;
+
         
     }
 };
