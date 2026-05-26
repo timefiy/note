@@ -44,7 +44,7 @@
 ## 链接和图片
 
 ```markdown
-[链接文本](https://example.com)
+	[链接文本](https://example.com)
 ![图片描述](image.jpg)
 ```
 
