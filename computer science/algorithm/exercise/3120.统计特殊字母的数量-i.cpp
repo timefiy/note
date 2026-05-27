@@ -11,7 +11,14 @@ using namespace std;
 class Solution {
 public:
     int numberOfSpecialChars(string word) {
-        
+        int ans = 0;
+
+        vector<int> count(26, 0);
+        for (char c : word) {
+            if (c >= 'a' && c <= 'z' && count[c - 'a'] < 2) {
+                count[c - 'a'];
+            }
+        }
     }
 };
 // @lc code=end
