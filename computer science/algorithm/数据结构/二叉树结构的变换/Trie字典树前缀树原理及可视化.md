@@ -7,17 +7,19 @@ published:
 created: 2026-02-06
 description: Trie/字典树/前缀树结构是多叉树的延伸，针对字符串处理有特殊优化。对比 HashMap，它有节约存储空间、方便处理前缀操作、支持通配符匹配等优点。本文介绍 TrieMap 的核心原理、标准接口。
 tags:
-  - clippings
+  - clippings_update
+  - 字典树
 ---
+# Trie字典树前缀树原理及可视化
 前置知识
 
 阅读本文前，你需要先学习：
 
-- [二叉树基础及常见类型](https://labuladong.online/zh/algo/data-structure-basic/binary-tree-basic/)
+- [二叉树基础及常见类型](../二叉树结构及遍历/二叉树基础及常见类型.md)
 
 一句话总结
 
-Trie 树就是 [多叉树结构](https://labuladong.online/zh/algo/data-structure-basic/n-ary-tree-traverse-basic/) 的延伸，是一种针对字符串进行特殊优化的数据结构。
+Trie 树就是 [多叉树的递归层序遍历](../二叉树结构及遍历/多叉树的递归层序遍历.md) 的延伸，是一种针对字符串进行特殊优化的数据结构。
 
 Trie 树在处理字符串相关操作时有诸多优势，比如节省公共字符串前缀的内存空间、方便处理前缀操作、支持通配符匹配等。
 
