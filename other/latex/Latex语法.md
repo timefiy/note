@@ -31,6 +31,7 @@ $$
 - 开方：`\sqrt{2}`、`\sqrt[n]{x}`
 - 希腊字母：`\alpha \beta \gamma`
 - 求和积分：`\sum_{i=1}^n i`，`\int_a^b f(x)\,dx`
+- 百分号：`\%`
 - 矩阵：
 
   ```latex
@@ -39,6 +40,7 @@ $$
   c & d
   \end{bmatrix}
   ```
+
 
 $$
 \begin{aligned}
