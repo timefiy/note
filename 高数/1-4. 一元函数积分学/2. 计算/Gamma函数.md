@@ -1,8 +1,10 @@
 ---
 属性: 拓展概念
-上一层级: 
 tags:
+  - Gamma函数
+  - 高斯曲线
 ---
+# Gamma函数
 
 $\Gamma$ 函数有时候在 [[反常积分的计算]] 时有奇效。
 
@@ -42,7 +44,7 @@ $$\Gamma \left(\frac{1}{2}\right) = \sqrt{\pi}$$
 > [!info] 
 > 可用下方 [[#高斯曲线]] 面积证明。
 
-$$\Rightarrow \Gamma \left(\frac{5}{2}\right)= \frac{3}{2} \cdot \frac{1}{2} \cdot \Gamma \left(\frac{1}{2}\right)= \frac{3}{4} \sqrt{\pi}$$
+$$\Rightarrow \Gamma \left(\frac{5}{2}\right) = \Gamma\left(\frac{3}{2} + 1\right) = \frac{3}{2} \cdot \frac{1}{2} \cdot \Gamma \left(\frac{1}{2}\right)= \frac{3}{4} \sqrt{\pi}$$
 
 ## 定义域
 
@@ -60,7 +62,3 @@ $$y = e^{t^{2}}$$
 曲线下围成的面积为 $\sqrt{\pi}$ ，一半为 $\frac{\sqrt{\pi}}{2}$ 。
 
 ![gaussian curve](assets/gaussian_curve.png)
-
-> [!note] 
-> 
-> 证明详见 `二重积分 p255`
