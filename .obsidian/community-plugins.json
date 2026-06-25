@@ -2,5 +2,7 @@
   "obsidian-git",
   "obsidian-custom-attachment-location",
   "remotely-save",
-  "obsidian-linter"
+  "obsidian-linter",
+  "quick-latex",
+  "obsidian-completr"
 ]
