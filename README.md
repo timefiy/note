@@ -21,3 +21,5 @@
 - remotely-save：远程同步备份(因为中间的配置文件牵扯到密码，所以不展示)
 - obsidian-custom-attachment-location：自定义附件路径
 - obsidian-linter：格式化笔记
+- Completr：LaTex、前文信息和标准写作的高级自动补全功能。
+- Quick Latex:简短快速地书写latex数学公式
