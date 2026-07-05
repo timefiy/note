@@ -151,7 +151,7 @@
 - **RSPAMD_NEURAL**：实验性神经网络反垃圾邮件模块。默认 **`0`**（禁用）。
     
 
-## 三、 日志摘要与报告设置 (Reports)
+### 三、 日志摘要与报告设置 (Reports)
 
 - **PFLOGSUMM_TRIGGER**：Postfix 日志摘要邮件触发器。**未设置**则不发送；可设为 `daily_cron`（发送前一天的每日报告）或 `logrotate`（在日志轮转时发送）。
     
@@ -162,7 +162,7 @@
 - **LOGROTATE_INTERVAL**：内部日志文件的轮转周期。默认 **`weekly`**（每周）。_提示：为防止容器销毁（如 `down && up`）导致日志丢失，建议将宿主机目录挂载到容器的 `/var/log/mail/`_。
     
 
-## 四、 SpamAssassin (传统垃圾邮件分析引擎)
+### 四、 SpamAssassin (传统垃圾邮件分析引擎)
 
 - **ENABLE_SPAMASSASSIN**：默认 **`0`**（禁用）。分析入站邮件并计算垃圾邮件得分。
     
@@ -181,18 +181,18 @@
 - **SA_KILL**：默认 **`10.0`**。高危垃圾邮件阈值。达到此得分的邮件会被强制**隔离**（默认存储在 `/var/lib/amavis/virusmails/` 中）。
     
 
-## 五、 邮件外部抓取 (Fetchmail & Getmail)
+### 五、 邮件外部抓取 (Fetchmail & Getmail)
 
 - **ENABLE_FETCHMAIL / FETCHMAIL_POLL**：从外部 POP3/IMAP 服务器抓取邮件的工具。默认 **`0`**（禁用），轮询时间默认 **`300`** 秒。
     
 - **ENABLE_GETMAIL / GETMAIL_POLL**：另一种邮件抓取工具。默认 **`0`**（禁用），轮询时间默认 **`5`** 分钟。
     
 
-## 六、 外部目录服务与认证 (LDAP / SASL / DOVECOT)
+### 六、 外部目录服务与认证 (LDAP / SASL / DOVECOT)
 
 这一部分包含大量的变量（如 `LDAP_SERVER_HOST`, `LDAP_SEARCH_BASE`, `DOVECOT_USER_FILTER` 等），当你的 `ACCOUNT_PROVISIONER` 设置为 `LDAP` 时，这些变量用来建立与企业内部 LDAP/Active Directory 服务器的连接，重写 Dovecot 和 Postfix 的用户、别名、域名的查询过滤规则（Filter Maps）。
 
-## 七、 邮件中继服务器设置 (Relay Host)
+### 七、 邮件中继服务器设置 (Relay Host)
 
 当你的服务器出网 **25 端口被云服务商封禁**，或者你想提高邮件的投递成功率时，需要配置第三方中继（如 SendGrid、Mailgun 等）。
 
@@ -207,3 +207,15 @@
 - **RELAY_PORT**：中继端口，默认 **`25`**（配合中继时通常会改为 587 或 465）。
     
 - **RELAY_USER / RELAY_PASSWORD**：第三方中继服务的验证账号和密码。配置后 DMS 将强制采用安全加密连接向中继服务认证外发。
+
+## 邮件知识
+
+### 邮件协议
+
+| 协议         | 默认端口 | 作用            | 是否需要加密      |
+| ---------- | ---- | ------------- | ----------- |
+| SMTP       | 25   | 邮件服务器之间发送邮件   | 支持 STARTTLS |
+| SMTPS      | 465  | 邮件客户端发送邮件（加密） | 默认 TLS      |
+| Submission | 587  | 邮件客户端发送邮件（推荐） | STARTTLS    |
+| IMAP       | 143  | 接收邮件          | 支持 STARTTLS |
+| IMAPS      | 993  | 接收邮件（加密）      | 默认 TLS      |

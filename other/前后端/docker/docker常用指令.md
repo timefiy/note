@@ -20,20 +20,20 @@ tags:
 
 ## 容器操作
 
-| 命令                          | 说明             |
-| --------------------------- | -------------- |
-| `docker ps`                 | 列出容器           |
-| `docker inspect`            | 查看容器/镜像/卷/网络详情 |
-| `docker top`                | 显示容器内进程        |
-| `docker attach`             | 附加到运行中的容器      |
-| `docker logs`               | 查看容器日志         |
-| docker logs --tail 100 容器ID | 查看容器日志最新的100行  |
-| `docker events`             | 获取守护进程事件       |
-| `docker wait`               | 等待容器停止并获取退出码   |
-| `docker export`             | 导出容器为 tar      |
-| `docker port`               | 显示端口映射         |
-| `docker stats`              | 实时资源使用情况       |
-| `docker update`             | 更新资源限制（内存、CPU） |
+| 命令                            | 说明             |
+| ----------------------------- | -------------- |
+| `docker ps`                   | 列出容器           |
+| `docker inspect`              | 查看容器/镜像/卷/网络详情 |
+| `docker top`                  | 显示容器内进程        |
+| `docker attach`               | 附加到运行中的容器      |
+| `docker logs`                 | 查看容器日志         |
+| `docker logs --tail 100 容器ID` | 查看容器日志最新的100行  |
+| `docker events`               | 获取守护进程事件       |
+| `docker wait`                 | 等待容器停止并获取退出码   |
+| `docker export`               | 导出容器为 tar      |
+| `docker port`                 | 显示端口映射         |
+| `docker stats`                | 实时资源使用情况       |
+| `docker update`               | 更新资源限制（内存、CPU） |
 
 ## 镜像仓库
 
