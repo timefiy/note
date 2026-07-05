@@ -65,44 +65,26 @@
 ### 8. 安全与服务开关
 
 - **ENABLE_AMAVIS**：内容过滤器开关（用于 ClamAV 和 SpamAssassin）。默认 **`0`**（禁用），可设为 `1`（启用）。`AMAVIS_LOGLEVEL` 默认 **`0`**（警告）。
-    
 - **ENABLE_DNSBL**：Postscreen DNS 黑名单开关。默认 **`0`**（禁用）。_注意：使用公共 DNS 解析器（如 8.8.8.8）可能会导致黑名单失效，未通过检查的邮件会被直接拒绝。_
-    
 - **ENABLE_MTA_STS**：外发邮件的 MTA-STS 支持。默认 **`0`**（禁用）。
-    
 - **ENABLE_OPENDKIM / ENABLE_OPENDMARC**：OpenDKIM 和 OpenDMARC 服务开关。默认均位 **`1`**（启用）。
-    
 - **ENABLE_POLICYD_SPF**：Postfix 中的 SPF 策略检查。默认 **`0`**（禁用）。如果你使用了 Rspamd，建议将其保持为 0。
-    
 - **ENABLE_POP3 / ENABLE_IMAP**：邮件收取协议开关。POP3 默认 **`0`**（禁用），IMAP 默认 **`1`**（启用）。
-    
 - **ENABLE_CLAMAV**：ClamAV 杀毒引擎开关。默认 **`0`**（禁用）。
-    
 - **ENABLE_FAIL2BAN**：Fail2Ban 防暴力破解开关。默认 **`0`**（禁用）。_启用时必须在 Compose 文件中赋予 `cap_add: - NET_ADMIN` 权限。_
-    
 - **FAIL2BAN_BLOCKTYPE**：封禁动作。默认 **`drop`**（直接丢弃不回应），可选 `reject`（发送不达回应）。
-    
 - **SMTP_ONLY**：默认**留空**（启动所有服务），设为 `1` 则仅启动 Postfix SMTP 服务。
-    
 
 ### 9. SSL 与加密
 
 - **SSL_TYPE**：证书类型。
-    
     - **留空 (empty)** => 禁用 SSL。
-        
     - `letsencrypt` => 配合 Let's Encrypt 自动证书。
-        
     - `manual` => 手动提供证书。需要设置 `SSL_CERT_PATH` 和 `SSL_KEY_PATH` 变量。
-        
     - `self-signed` => 生成自签名证书，仅供本地测试，生产环境不推荐。
-        
 - **TLS_LEVEL**：TLS 安全等级。
-    
     - **留空 (empty) / `modern`** => 现代安全模式（仅限安全的加密套件，最低要求 TLS v1.2）。
-        
     - `intermediate` => 中等安全模式（增加老旧套件以获得更广泛的兼容性）。
-        
 
 ### 10. 邮件限制与反欺诈
 
