@@ -201,3 +201,55 @@
 | Submission | 587  | 邮件客户端发送邮件（推荐） | STARTTLS    |
 | IMAP       | 143  | 接收邮件          | 支持 STARTTLS |
 | IMAPS      | 993  | 接收邮件（加密）      | 默认 TLS      |
+
+## 部署
+
+```yml
+mailserver:
+    image: ghcr.io/docker-mailserver/docker-mailserver:latest
+    container_name: mailserver
+    hostname: mail.zhuyuxi.xyz
+    restart: unless-stopped
+    ports:
+      - "25:25"      # SMTP
+      - "465:465"    # SMTPS
+      - "587:587"    # Submission
+      - "143:143"    # IMAP
+      - "993:993"    # IMAPS
+    volumes:
+      - mail_data:/var/mail/
+      - mail_state:/var/mail-state/
+      - mail_logs:/var/log/mail/
+      - ./docker-data/dms/config/:/tmp/docker-mailserver/
+      # SSL证书
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      # 时区
+      TZ: Asia/Shanghai
+      # SSL，使用Let's Encrypt
+      SSL_TYPE: letsencrypt
+      # 分析入站邮件并计算垃圾邮件得分
+      ENABLE_SPAMASSASSIN: 1
+      # ClamAV 杀毒引擎开关
+      ENABLE_CLAMAV: 1
+      # Fail2Ban 防暴力破解开关
+      ENABLE_FAIL2BAN: 1
+      # 启用 Postgrey
+      ENABLE_POSTGREY: 0
+      # DKIM
+      ENABLE_OPENDKIM: 1
+      # POP3
+      ENABLE_POP3: 0
+      # 日志
+      LOG_LEVEL: info
+    cap_add:
+      - NET_ADMIN
+    healthcheck:
+      test: ["CMD-SHELL", "ss -ltn | grep -E ':(25|465|587|143|993)\\b'"]
+      interval: 30s
+      timeout: 3s
+      retries: 5
+    networks:
+      - blog-network
+```
