@@ -30,9 +30,14 @@ sudo snap install --classic certbot
 
 ### 申请证书
 
+#### 单域名证书的申请
+
 ```bash
 sudo certbot certonly --standalone -d mail.example.xyz
 
 #确认证书存在 
 sudo ls /etc/letsencrypt/live/mail.zhuyuxi.xyz/
 ```
+
+
+https://www.cnblogs.com/michaelshen/p/18538178
