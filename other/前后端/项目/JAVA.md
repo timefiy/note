@@ -1,83 +1,75 @@
 # JAVA
-# 一.配置项目所需环境
+## 一. 配置项目所需环境
 
-## jdk安装
+### jdk安装
 
-### 1.1 安装jdk
+#### 1.1 安装jdk
 
-#### 1.1.1 找到安装包,双击打开
+##### 1.1.1 找到安装包,双击打开
 
 jdk: java development kit java开发工具包
 
 17.0.13: 17版本
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343254745-9ec07b28-e558-4c73-9a75-7370bb96477c.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343254745-9ec07b28-e558-4c73-9a75-7370bb96477c.png)
 
-#### 1.1.2 下一步
+##### 1.1.2 下一步
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343353964-8a384b29-b128-4d4a-8ce2-ba191ca465a2.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343353964-8a384b29-b128-4d4a-8ce2-ba191ca465a2.png)
 
-#### 1.1.3 先新建一个文件夹命名Java
+##### 1.1.3 先新建一个文件夹命名Java
 
 在其内新建两个文件夹 分别命名JDK,JRE
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783385513864-b4859a40-c54b-4d3f-8bac-8eda2db1d714.png)
 
-#### 1.1.4 在安装程序中选择jdk路径
+##### 1.1.4 在安装程序中选择jdk路径
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343385990-e5f6078d-57a6-42e2-be9d-3c4aa8016705.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343385990-e5f6078d-57a6-42e2-be9d-3c4aa8016705.png)
 
-#### 1.1.5 成功
+##### 1.1.5 成功
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312436-1cab3597-69ee-46bf-aa7e-581ca3a2570e.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312436-1cab3597-69ee-46bf-aa7e-581ca3a2570e.png)
 
-### 1.2配置java环境变量
+#### 1.2配置java环境变量
 
 此电脑 --> 右键 --> 属性 --> 高级系统设置 --> 环境变量
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312404-accd6e97-2180-459a-9ce3-48cfe4e0bdff.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312404-accd6e97-2180-459a-9ce3-48cfe4e0bdff.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312353-0cd9f3ae-4919-46d9-8e7f-0dc69001db71.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277312353-0cd9f3ae-4919-46d9-8e7f-0dc69001db71.png)
 
 选择环境变量
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314095-c31c62b5-4003-4243-a08f-dc01f7e83dd9.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314095-c31c62b5-4003-4243-a08f-dc01f7e83dd9.png)
 
 在下方**[系统变量]**中进行配置
 
 新建变量,变量名输入JAVA_HOME , 变量值是JDK的安装路径
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314150-2a911a19-2adf-4c33-a4f3-e7d7b4fb759b.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314150-2a911a19-2adf-4c33-a4f3-e7d7b4fb759b.png)
 
 新建变量,变量名输入JRE_HOME , 变量值是JRE的安装路径
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314321-33bdf2f5-1c81-4174-b483-305d8e081b46.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314321-33bdf2f5-1c81-4174-b483-305d8e081b46.png)
 
 找到path变量,双击打开,添加我们自己变量
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314379-7dc84988-a73c-4205-9f5b-b939956c6b52.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314379-7dc84988-a73c-4205-9f5b-b939956c6b52.png)
 
 点击右侧新建按钮进行输入
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314546-09c0fae9-f8f7-451a-96fe-0bd53236a2f0.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314546-09c0fae9-f8f7-451a-96fe-0bd53236a2f0.png)
 
-### 1.3.测试是否配置成功
+#### 1.3 测试是否配置成功
 
 win+r --> 弹窗输入cmd --> 回车
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314722-e10afa81-a78a-4ceb-8f38-0ec50c0f694b.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314722-e10afa81-a78a-4ceb-8f38-0ec50c0f694b.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343454368-8d56bc5b-11d0-4a21-a1d9-4a35ae19dfee.png)
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763343454368-8d56bc5b-11d0-4a21-a1d9-4a35ae19dfee.png "null")
-
-## 2.MySQL安装
+### 2 MySQL安装
 
 首先卸载电脑上安装的mysql,(**如果本机电脑是mysql5版本需要卸载,如果原本安装的是mysql8.0则不用修改**),我们统一版本使用mysql8.0
 
@@ -93,21 +85,15 @@ services.msc
 
 找到控制面板
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314966-431938ea-fc8c-4be3-a67e-374d82708352.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277314966-431938ea-fc8c-4be3-a67e-374d82708352.png)
 
 **将关于mysql相关软件全部卸载**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315057-7f6d922a-11d9-43f1-b8b1-cd5cf5b6e18c.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315057-7f6d922a-11d9-43f1-b8b1-cd5cf5b6e18c.png)
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315179-45f6c0c2-aafe-4f39-8da0-563b337b7821.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315179-45f6c0c2-aafe-4f39-8da0-563b337b7821.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315436-eae8e190-4372-478b-84ca-a0e492970e26.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315436-eae8e190-4372-478b-84ca-a0e492970e26.png)
 
 **注意!!!!!!!!!!!!!!!!!!!**
 
@@ -115,17 +101,15 @@ services.msc
 
 找到C盘,显示隐藏文件
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315818-27d06146-c645-4a8b-837f-01ed716000fb.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315818-27d06146-c645-4a8b-837f-01ed716000fb.png)
 
 找到隐藏文件夹programData
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315763-7becdb9a-facf-4e7f-b90b-d5a85adfe9d3.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315763-7becdb9a-facf-4e7f-b90b-d5a85adfe9d3.png)
 
 删除MySQL文件夹
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315822-768fad6e-0f53-4e12-ab51-c62138e04c30.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315822-768fad6e-0f53-4e12-ab51-c62138e04c30.png)
 
 **mysql下载:**
 
@@ -135,19 +119,15 @@ services.msc
 
 目前安装的版本: 5.7+ , 8.0+(现在大多数公司用mysql8.0以上的居多)
 
-|   |
-|---|
-|**版本选择**|
-||
-|![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315881-7e3d0783-6315-47d6-909e-9b72be757388.png "null")|
+**版本选择**
 
-|   |
-|---|
-|**下载页面**|
-||
-|![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315915-979a2900-2c57-4faf-9c24-d30b76efd9a8.png "null")|
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315881-7e3d0783-6315-47d6-909e-9b72be757388.png)
 
-### 2.1 安装
+**下载页面**
+
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277315915-979a2900-2c57-4faf-9c24-d30b76efd9a8.png)
+
+#### 2.1 安装
 
 **安装之前确保电脑主机不能为中文**
 
@@ -157,21 +137,13 @@ services.msc
 
 选择选项server only 只需要安装mysql server 8.0
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316297-3b9fd1c0-86cf-4d11-8980-1db952da85b7.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316297-3b9fd1c0-86cf-4d11-8980-1db952da85b7.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316501-31eb24f5-ae79-4680-8326-327b6215c483.png)
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316439-b4c860dd-4250-49e7-83a9-bb1be1b3882d.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316501-31eb24f5-ae79-4680-8326-327b6215c483.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316439-b4c860dd-4250-49e7-83a9-bb1be1b3882d.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316504-7a73d386-d38e-4b0d-b2c5-b3657c1a37c1.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316504-7a73d386-d38e-4b0d-b2c5-b3657c1a37c1.png)
 
 配置服务器参数
 
@@ -183,13 +155,9 @@ Root账户密码（重要！）
 
 学习环境：可设为简单密码（如root）
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316703-a2d02040-4114-4ed2-b5d1-bda102ee3f37.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316703-a2d02040-4114-4ed2-b5d1-bda102ee3f37.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316894-c1c9d19a-e18f-4744-a0ba-2a772fb10a41.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316894-c1c9d19a-e18f-4744-a0ba-2a772fb10a41.png)
 
 密码不要有特殊字符:如@,#等等
 
@@ -199,43 +167,29 @@ Root账户密码（重要！）
 
 建议统一设置密码为:root或123456和生日
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316919-588f3f03-c26d-4174-a27e-c434de382fc0.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316919-588f3f03-c26d-4174-a27e-c434de382fc0.png)
 
 保持默认服务名`MySQL80`，建议勾选`Start the MySQL Server at System Startup`（开机自启）：
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316995-cc0dae99-0200-4f93-a025-723515be4e25.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277316995-cc0dae99-0200-4f93-a025-723515be4e25.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317026-7a6a22bb-abff-4b06-8ca5-866cea084e54.png)
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317343-8c05bff7-9e13-47e9-aa2f-44b7c2c90869.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317026-7a6a22bb-abff-4b06-8ca5-866cea084e54.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317374-d6138d95-f2c7-43e2-a1d8-44aa8904ac42.png)
 
-  
+#### 2.2配置环境变量
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317343-8c05bff7-9e13-47e9-aa2f-44b7c2c90869.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317397-381a947f-6846-470d-a841-1f24e5ae3262.png)
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317491-a2d9da3c-18e7-4ebf-a640-43a062f8f21d.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317374-d6138d95-f2c7-43e2-a1d8-44aa8904ac42.png "null")
-
-### 2.2配置环境变量
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317397-381a947f-6846-470d-a841-1f24e5ae3262.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317491-a2d9da3c-18e7-4ebf-a640-43a062f8f21d.png "null")
-
-### 2.3使用
+#### 2.3使用
 
 win+r输入cmd
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317626-e9b36add-5dfd-4a3b-87b8-f4f0b1700191.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317626-e9b36add-5dfd-4a3b-87b8-f4f0b1700191.png)
 
 - 登录mysql
 
@@ -245,27 +199,21 @@ mysql -uroot -pxxxxx
 
 exit
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317813-7c4fdde8-4002-424d-a402-0a89511d1c69.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317813-7c4fdde8-4002-424d-a402-0a89511d1c69.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317896-a9a8a678-3cf0-44a5-ba9d-a4bf33357f90.png)
 
-  
+### 3 maven配置
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277317896-a9a8a678-3cf0-44a5-ba9d-a4bf33357f90.png "null")
-
-## 3.maven配置
-
-### 3.1 解压该文件到任意磁盘下
+#### 3.1 解压该文件到任意磁盘下
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783386689422-426db092-c211-431d-bb70-7be9cea6ef18.png)
 
-### 3.2 maven文件结构介绍
+#### 3.2 maven文件结构介绍
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277318738-34e35693-6b10-4ccb-8d08-d9e4790e2bc5.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277318738-34e35693-6b10-4ccb-8d08-d9e4790e2bc5.png)
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277318540-382171bc-40c9-4403-a6c7-33e4722095d8.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277318540-382171bc-40c9-4403-a6c7-33e4722095d8.png)
 
 记事本打开settings.xml文件
 
@@ -275,9 +223,9 @@ exit
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783386643264-6dcfff8a-7687-4601-9e04-05dda17e8a1e.png)
 
-完整的settings.xml文件如下
+完整的文件如下
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
@@ -533,9 +481,9 @@ under the License.
 </settings>
 ```
 
-## 4.Navicat16安装教程
+### 4 Navicat16安装教程
 
-### 4.1卸载电脑上已安装的navicat
+#### 4.1卸载电脑上已安装的navicat
 
 打开控制面板
 
@@ -547,7 +495,7 @@ under the License.
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1765105553753-590ea4e9-31b0-4127-a518-76a7e7e3efe2.png)
 
-### 4.2激活navicat
+#### 4.2激活navicat
 
 先打开Navicat16补丁文件夹
 
@@ -557,11 +505,11 @@ under the License.
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1765105390195-b9469823-9e91-40dd-8974-18e46e745a6a.png)
 
-### 4.3安装navicat 16(傻瓜式安装)
+#### 4.3安装navicat 16(傻瓜式安装)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1765105437538-4f5391a2-703c-454e-b019-59105492cfe9.png)
 
-### 4.4 navicat连接本地mysql数据库
+#### 4.4 navicat连接本地mysql数据库
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783501197638-79305c3b-d3c4-426a-9dfe-ac34726dd599.png)
 
@@ -579,7 +527,7 @@ under the License.
 
 以上4个数据库,不要删除,也不要进行改动,这四个数据库是mysql自带的数据库跟你没关系
 
-## 5 idea破解
+### 5 idea破解
 
 以管理员身份打开powershell,执行以下命令
 
@@ -587,7 +535,7 @@ under the License.
 irm ckey.run|iex
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1778466746382-22702499-7c93-4b3b-b8bb-3e27a8331f7c.png?x-oss-process=image%2Fcrop%2Cx_0%2Cy_5%2Cw_391%2Ch_23 "null")
+![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1778466746382-22702499-7c93-4b3b-b8bb-3e27a8331f7c.png?x-oss-process=image%2Fcrop%2Cx_0%2Cy_5%2Cw_391%2Ch_23)
 
 回车会弹框,点击确认
 
@@ -601,7 +549,7 @@ irm ckey.run|iex
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783501823331-b78752d1-3456-47d6-b57d-4ae815670b4c.png)
 
-# 二.搭建简单快速的springboot工程
+## 二. 搭建简单快速的springboot工程
 
 首先idea需要配置maven构建工具(全局配置)
 
@@ -619,17 +567,15 @@ irm ckey.run|iex
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1779109007672-7f0d09ae-2bdc-427a-b9e6-f9ef89fb3f7e.png)
 
-Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块，它包括支持传统Servlet架构的Spring Web MVC和响应式编程模型的Spring WebFlux，旨在提供灵活、高效的Web开发解决方案。(可以理解为前端发送请求,就需要用到这个组件)
+Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块，它包括支持传统[^1]Servlet架构的[^2]Spring Web MVC和响应式编程模型的Spring WebFlux，旨在提供灵活、高效的Web开发解决方案。(可以理解为前端发送请求,就需要用到这个组件)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277319236-2fc8d045-5def-4840-a275-6ccb1eb2390b.png)
-
-  
 
 如果下载下来的springboot工程文件结构如下图所示的话,那么大概率是网络问题,下载失败
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783561740691-d251ada5-7144-455a-b87e-83c140df1610.png)
 
-## 1.创建好之后,包结构显示不太分明
+### 1 创建好之后,包结构显示不太分明
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1779109465285-6821c5ca-b7ad-412c-b1a1-70c541d031cf.png)
 
@@ -637,25 +583,25 @@ Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1779109496934-92bd42e1-7f1f-4390-bc84-5b0717ba5bad.png)
 
-## 2.准备工作无误之后测试运行
+### 2 准备工作无误之后测试运行
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277319351-900555a6-15de-42d5-a6f3-4eb960ae83e5.png)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277319728-c26757bc-07ae-46c3-9c04-a47bbe46c27f.png)springboot默认端口号为8080
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277320086-1f1b57e2-6a3b-40ea-b90d-aa79a96d61aa.png)  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277320086-1f1b57e2-6a3b-40ea-b90d-aa79a96d61aa.png)
 
 访问地址为`localhost:8080`他等价于`127.0.0.1:8080`
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1765205032076-96c536b0-f3c5-4c94-85e2-3f3e01d139c3.png)
 
-## 3.项目文件结构解析
+### 3 项目文件结构解析
 
-### 3.1pom.xml文件
+#### 3.1pom.xml文件
 
 - 项目的元数据：包名，项目名，版本号。
 
-```
+```xml
 <groupId>com.qf</groupId>
 <artifactId>test_springboot01</artifactId>
 <version>0.0.1-SNAPSHOT</version>
@@ -664,7 +610,7 @@ Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块
 
 - 指定了properties信息：指定了java的版本为1.8
 
-```
+```xml
 <properties>
   <java.version>1.8</java.version>
 </properties>
@@ -673,7 +619,7 @@ Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块
 - 导入依赖：按需导入(web,mysql等等)
 - 插件：spring-boot-maven-plugin (如果有报错,也可以不要)
 
-```
+```xml
 <build>
   <plugins>
     <plugin>
@@ -685,18 +631,18 @@ Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块
 </build>
 ```
 
-### 3.2 .gitignore文件
+#### 3.2 .gitignore文件
 
 默认帮我们忽略了一些文件和目录，避免提交到Git仓库中
 
-### 3.3 目录结构
+#### 3.3 目录结构
 
-```
+```tree
 -src
-     -main   
+     -main
        -java
-         -包名
-    启动类.java           # 需要将controller类，放在启动类的子包中或者同级包下,否则需要使用@ComponentScan 注解,并指定扫描的包即可
+         -包名 
+          -启动类.java           # 需要将controller类，放在启动类的子包中或者同级包下,否则需要使用@ComponentScan 注解,并指定扫描的包即可
        -resources  # resources下放除了java代码之外其他资源文件
          -static                 # 存放静态资源的,js,css,html
          -templates              # 存储模板页面的,Thymeleaf,jsp,freemarker
@@ -704,14 +650,14 @@ Spring Web组件是用于构建Java驱动的动态Web应用程序的框架模块
      -test                       # 只是为了测试用的
 ```
 
-# 三.spring
+## 三. spring
 
 spring的核心功能
 
 - IOC,DI
 - AOP(面向切面编程,在不影响现在代码逻辑的情况下添加功能)
 
-## 1. 介绍
+### 1  介绍
 
 IOC是Spring框架的核心功能之一,IOC(inversion of control)控制反转
 
@@ -739,7 +685,7 @@ IOC是Spring框架的核心功能之一,IOC(inversion of control)控制反转
 - **@Autowired(默认按照类型匹配)**
 - **@Resource(默认按照名称)**
 
-## 2. 演示1
+### 2  演示1
 
 需求: 项目中控制层servlet需要使用到业务层对象来处理业务,例如AdminController中需要创建AdminService对象使用,使用IOC+DI完成
 
@@ -809,7 +755,7 @@ public class AdminController {
 }
 ```
 
-## 3. 演示2
+### 3  演示2
 
 **@Component注解创建对象**
 
@@ -836,13 +782,13 @@ controller注入实体类进行使用
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277331124-95fff74b-13af-4f71-bd74-bafa7db66225.png)
 
-# 四、Springmvc
+## 四. Springmvc
 
 其实是spring框架中关于web,webmvc开发的一个技术
 
 spring核心ioc,aop,web开发
 
-## 1. MVC
+### 1  MVC
 
 MVC架构: 根据不同的事情由不同的类去处理,内部单一职责
 
@@ -861,7 +807,7 @@ MVC框架特点
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277332382-a088991a-6ee5-4714-8fc1-147c859c7b4a.png)
 
-## 2. 请求&响应【重点】
+### 2  请求&响应【重点】
 
 其实我们之前的那些案例中就已经使用了请求和响应
 
@@ -873,11 +819,11 @@ MVC框架特点
 
 @RequestMapping注解使用
 
-## 3. 参数绑定 【重点】
+### 3  参数绑定 【重点】
 
 所谓参数绑定,就是前端发请求中的数据,可以直接在Controller的方法参数中接收.即前端请求数据和后端方法参数绑定.
 
-### 3.1 简单类型参数绑定[重点]
+#### 3.1 简单类型参数绑定[重点]
 
 简单类型指,常用的几种类型: 基本类型+String+Date
 
@@ -925,7 +871,7 @@ MVC框架特点
     }
 ```
 
-### 3.2 对象[重点]
+#### 3.2 对象[重点]
 
 场景: 注册/添加/更新
 
@@ -990,7 +936,7 @@ public class Users {
     }
 ```
 
-### 3.3 数组
+#### 3.3 数组
 
 场景: 批量删除需要同时接收多个id, (前端是复选框的)
 
@@ -1032,7 +978,7 @@ delete from tb_user where id in (1,2,3,4)
     }
 ```
 
-### 3.4 List集合
+#### 3.4 List集合
 
 List集合使用场景与数组是一样的
 
@@ -1063,7 +1009,7 @@ public String list(@RequestParam List<String> skill){
 }
 ```
 
-### 3.5 Map集合
+#### 3.5 Map集合
 
 Map是键值对,键和值一一映射.
 
@@ -1105,7 +1051,7 @@ public String map(@RequestParam Map<String,Object> map){
 }
 ```
 
-### 3.6 路径参数@PathVariable
+#### 3.6 路径参数@PathVariable
 
 参考这个路径
 
@@ -1138,7 +1084,7 @@ public String path(@PathVariable int id){
 
 ps: 能接收到请求中的id为101,但是响应回报错.因为使用@PathVariable要求返回的是json数据而不是页面,这个暂时先不管
 
-## 4. 页面跳转[熟悉]
+### 4  页面跳转[熟悉]
 
 我们可以手动显示的在Controller的方法的返回值中写forward:路径即可完成跳转
 
@@ -1178,7 +1124,7 @@ public String redirect(){
 
 其他的请求转发和重定向的特点和之前学习的servlet是一样的,复习.
 
-## 5. json处理【重点】
+### 5  json处理【重点】
 
 后续工作项目,都是前后端分离开发,前后端使用JSON数据交互
 
@@ -1213,7 +1159,7 @@ public String redirect(){
 
 补充: 如果该类中所有方法都返回json,那就需要在每个方法上都要加@ResponseBody注解,有点麻烦,此时可以直接将@Controller换成@RestController, 以后方法默认返回json,就不需要加@ResponseBody
 
-# 五.MyBatis Plus
+## 五. MyBatis Plus
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754405307945-e7b44874-5809-44da-a8d9-c76e90fae592.png)
 
@@ -1225,9 +1171,9 @@ MyBatis-Plus（简称 MP）是一个 MyBatis的增强工具，在 MyBatis 的基
 
 接下来对数据库中的数据进行增删改查
 
-## 1.新建springboot项目
+### 1 新建springboot项目
 
-## 2.导入Mybatis-plus起步依赖
+### 2 导入Mybatis-plus起步依赖
 
 完整pom.xml文件
 
@@ -1324,7 +1270,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis的增强工具，在 MyBatis 的基
 </project>
 ```
 
-## 3. yml配置
+### 3  yml配置
 
 ```
 server:
@@ -1369,7 +1315,7 @@ public class ZzqgySpringbootApplication {
 }
 ```
 
-## 4.建库建表
+### 4 建库建表
 
 创建test数据库并新建employee员工表
 
@@ -1381,7 +1327,7 @@ public class ZzqgySpringbootApplication {
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1749475256887-a3c61b59-ae42-43a0-a487-ede4fef8a1f9.png)
 
-### 4.1实体类
+#### 4.1实体类
 
 ```
 package com.qf.entity;
@@ -1419,7 +1365,7 @@ public class Employee {
 |@TableId|修饰属性，指定主键对应的属性value 主键字段名，可以不写type 主键类型，IdType.AUTO 自增IdType.ASSIGN_ID 雪花算法生成的值IdType.ASSIGN_UUID uuid|
 |@TableField|修饰属性，针对非主键的属性|
 
-### 4.2Dao层接口
+#### 4.2Dao层接口
 
 自定义接口需要实现BaseMapper接口
 
@@ -1481,7 +1427,7 @@ class ZzqgySpringbootApplicationTests {
 }
 ```
 
-### 4.3代码
+#### 4.3代码
 
 EmployeeService接口
 
@@ -1581,7 +1527,7 @@ class ZzqgySpringbootApplicationTests {
 }
 ```
 
-### 4.4条件构造器Wrapper
+#### 4.4条件构造器Wrapper
 
 **主要方法**
 
@@ -1767,7 +1713,7 @@ class ZzqgySpringbootApplicationTests {
 }
 ```
 
-## 5. 多表查询
+### 5  多表查询
 
 一个员工表
 
@@ -2077,37 +2023,37 @@ class ZzqgySpringbootApplicationTests {
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754405307967-e9fb0ded-6416-4764-9510-e043fb14960b.png)
 
-# 六.实现智慧运动管理员端登陆功能
+## 六. 实现智慧运动管理员端登陆功能
 
-# 七.搭建智慧AI宠物平台前端
+## 七. 搭建智慧AI宠物平台前端
 
 前端解压:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347241250-dea206b6-ecfb-4ea2-9e01-8989febee2e9.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347241250-dea206b6-ecfb-4ea2-9e01-8989febee2e9.png)
 
 文件结构如下所示
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347248816-367cfdeb-9777-47ba-8384-8d8236151c8b.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347248816-367cfdeb-9777-47ba-8384-8d8236151c8b.png)
 
-## 1.下载nvm工具
+### 1 下载nvm工具
 
 先卸载本地安装的node.js,再安装nvm工具
 
 官网:[https://nvm.uihtm.com/doc/download-nvm.html](https://nvm.uihtm.com/doc/download-nvm.html)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347446277-53a52155-4d8c-4952-94ce-5e8297d6007d.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347446277-53a52155-4d8c-4952-94ce-5e8297d6007d.png)
 
 下载好之后的压缩包:
 
 直接解压双击傻瓜式安装即可
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347475874-ab217ff5-2511-40db-98e6-251f524da410.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347475874-ab217ff5-2511-40db-98e6-251f524da410.png)
 
-## 2.nvm使用
+### 2 nvm使用
 
 **nvm**（Node Version Manager）是一个用于管理多个 **Node.js** 版本的命令行工具。它允许你在同一台机器上轻松安装、切换和使用不同版本的 Node.js，非常适合开发中需要兼容不同项目所依赖的 Node.js 版本的场景。
 
-### 2.1node.js介绍
+#### 2.1node.js介绍
 
 **Node.js** 是一个可以让 JavaScript 在电脑（服务器）上运行的环境，不只是在浏览器里。它适合做后端服务、API、工具等。
 
@@ -2119,65 +2065,53 @@ class ZzqgySpringbootApplicationTests {
 
 - **npm**：装 JS 第三方库的“应用商店”。
 
-### 2.2查看可下载的node.js版本
+#### 2.2查看可下载的node.js版本
 
 ```
 nvm list available
 ```
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347695388-ecc1fcc8-eabd-4c71-9031-c7cc52ab16f0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347695388-ecc1fcc8-eabd-4c71-9031-c7cc52ab16f0.png "null")
-
-### 2.3下载对应版本(例:这里下载node.js 16.20.0)
+#### 2.3下载对应版本(例:这里下载node.js 16.20.0)
 
 ```
 nvm install 16
 ```
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347929479-76da382c-e991-455f-bba2-65ede8bb82e1.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347929479-76da382c-e991-455f-bba2-65ede8bb82e1.png "null")
-
-### 2.4查看已经下载的node.js版本
+#### 2.4查看已经下载的node.js版本
 
 ```
 nvm list
 ```
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347979275-81233136-28a0-4ce2-8bc0-061bb089f36a.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763347979275-81233136-28a0-4ce2-8bc0-061bb089f36a.png "null")
-
-### 2.5切换node.js版本
+#### 2.5切换node.js版本
 
 ```
 nvm use 16.20.0
 ```
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348054197-381c0b7f-045e-45be-93e7-db0edc93e048.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348054197-381c0b7f-045e-45be-93e7-db0edc93e048.png)
 
 此时再次查看node.js版本,这是使用版本前会有星号(*)提示
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348093026-c24dd4cc-becc-4682-9ca1-51989c99be9e.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348093026-c24dd4cc-becc-4682-9ca1-51989c99be9e.png "null")
-
-## 3前端运行
+### 3前端运行
 
 打开前端文件夹
 
-### 3.1先删除package-lock.json文件
+#### 3.1先删除package-lock.json文件
 
 右键删除就可以
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348986652-d1710112-ac3f-4d23-9a36-f2d4593f5ffb.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763348986652-d1710112-ac3f-4d23-9a36-f2d4593f5ffb.png "null")
-
-### 3.2打开终端输入
+#### 3.2打开终端输入
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1780910711630-780d8da5-c0b5-4f22-9419-6f8735390a58.png)
 
@@ -2193,49 +2127,39 @@ npm config set registry https://registry.npmmirror.com
 npm install --legacy-peer-deps
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349694680-d1d9034e-aad8-429e-bb8e-c0c2b5a31b56.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349694680-d1d9034e-aad8-429e-bb8e-c0c2b5a31b56.png)
 
 等待下载完成
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349733447-7e3bcc7e-1b8b-43c7-aec2-f5f744d0acbb.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349733447-7e3bcc7e-1b8b-43c7-aec2-f5f744d0acbb.png)
 
 成功下载122个包
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349751113-32877cdf-e94e-4c40-b10f-c78b5dd2c511.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349751113-32877cdf-e94e-4c40-b10f-c78b5dd2c511.png)
 
 此时会多出一个文件夹node_modules
 
 `node_modules` 是 Node.js 项目中一个**自动生成的文件夹**，用来存放项目所依赖的所有第三方包（也就是通过 `npm install`安装的模块）。
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763361619876-337b6d19-8cb9-4528-aeab-54fe8c6b6824.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763361619876-337b6d19-8cb9-4528-aeab-54fe8c6b6824.png "null")
-
-### 3.3运行前端
+#### 3.3运行前端
 
 ```
 npm run dev
 ```
 
-  
-
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1780911142828-9504332e-3b7f-480e-aaef-64dfe2143aa9.png)
 
 运行成功,访问路径为: [http://localhost:8080/](http://localhost:8080/)
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349991528-63d5d2e3-62df-4c63-a0e7-00842f03bbb8.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763349991528-63d5d2e3-62df-4c63-a0e7-00842f03bbb8.png "null")
+## 八. 智慧AI宠物管理平台后端
 
-# 八.智慧AI宠物管理平台后端
+### 1 项目搭建
 
-## 1.项目搭建
-
-### 1.1完整pom.xml文件
+#### 1.1完整pom.xml文件
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2512,7 +2436,7 @@ npm run dev
 </project>
 ```
 
-### 1.2完整application.yml文件
+#### 1.2完整application.yml文件
 
 ```
 # 服务器配置
@@ -2638,11 +2562,11 @@ spark:
   api-password: XSrAcYcUqAMKkWlRnTHk:KxWYFDwzzcnzbiwhUrFe
 ```
 
-### 1.3创建mvc三层架构对应的包结构
+#### 1.3创建mvc三层架构对应的包结构
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763363601421-96306764-12ac-4984-9926-a9deada182c7.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763363601421-96306764-12ac-4984-9926-a9deada182c7.png)
 
-### 1.4在启动类上添加mybatis-plus提供扫描dao层注解
+#### 1.4在启动类上添加mybatis-plus提供扫描dao层注解
 
 ```
 package com.qf;
@@ -2663,7 +2587,7 @@ public class PetApplication {
 }
 ```
 
-### 1.5创建config在包下继续创建config包,并创建mybatisplus的分页插件配置类MybatisPlusConfig
+#### 1.5创建config在包下继续创建config包,并创建mybatisplus的分页插件配置类MybatisPlusConfig
 
 ```
 package com.qf.config;
@@ -2715,7 +2639,7 @@ public class MybatisPlusConfig {
 }
 ```
 
-### 1.6因为我们项目后端需返回JSON格式数据,所以需要用到Result工具类,在utils包下创建该类
+#### 1.6因为我们项目后端需返回JSON格式数据,所以需要用到Result工具类,在utils包下创建该类
 
 ```
 package com.qf.utils;
@@ -2794,9 +2718,9 @@ public class Result {
 }
 ```
 
-# 九.实现登陆注册和忘记密码功能
+## 九. 实现登陆注册和忘记密码功能
 
-## 1.实现用户登录功能
+### 1 实现用户登录功能
 
 创建对应实体类包entity包,并创建用户对应User实体类
 
@@ -3154,9 +3078,7 @@ public interface MenuDao extends BaseMapper<Menu> {
 
 注意查看登录请求成功之后返回的JSON数据
 
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763610909671-cc36610b-3bb2-46d2-9039-697bdf5cf1a0.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763610909671-cc36610b-3bb2-46d2-9039-697bdf5cf1a0.png)
 
 将图片文件夹拷贝进此项目根路径下
 
@@ -3166,9 +3088,9 @@ public interface MenuDao extends BaseMapper<Menu> {
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/40865112/1783390970397-07325cc8-b0af-4207-9a91-dabfbf3a03dd.png)
 
-## 2.实现用户注册功能
+### 2 实现用户注册功能
 
-### 2.1用户需要绑定邮箱,我们先处理关于邮箱验证码校验功能
+#### 2.1用户需要绑定邮箱,我们先处理关于邮箱验证码校验功能
 
 在controller包下创建关于邮箱功能模块EmailController控制类
 
@@ -3306,7 +3228,7 @@ public class EmailServiceImpl implements EmailService {
 
 因为我们直接调用的是UserDao接口,所以可以不用创建对应的EmailDao接口了
 
-### 2.2实现用户注册功能
+#### 2.2实现用户注册功能
 
 在UserController中添加createUser方法
 
@@ -3534,9 +3456,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
 }
 ```
 
-### 2.3完善个人信息功能
+#### 2.3完善个人信息功能
 
-#### 2.3.1实现图片上传功能
+##### 2.3.1实现图片上传功能
 
 在config包下创建关于文件上传大小的配置类MultipartConfig
 
@@ -3797,7 +3719,7 @@ public class FileController {
 }
 ```
 
-#### 2.3.2实现提交信息功能
+##### 2.3.2实现提交信息功能
 
 在UserController中添加updateUser方法
 
@@ -4054,9 +3976,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
 }
 ```
 
-### 2.4实现忘记密码功能
+#### 2.4实现忘记密码功能
 
-#### 2.4.1实现忘记密码邮件发送验证码验证功能
+##### 2.4.1实现忘记密码邮件发送验证码验证功能
 
 在EmailController中添加findByEmail方法
 
@@ -4250,7 +4172,7 @@ public class EmailServiceImpl implements EmailService {
 }
 ```
 
-#### 2.4.2实现提交新密码功能
+##### 2.4.2实现提交新密码功能
 
 在UserController中添加forgetPassword方法
 
@@ -4557,9 +4479,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
 }
 ```
 
-# 十.实现个人中心功能
+## 十. 实现个人中心功能
 
-## 1.实现密码修改功能
+### 1 实现密码修改功能
 
 创建对应UserPasswordUpdate实体类
 
@@ -4577,7 +4499,7 @@ public class UserPasswordUpdate {
     // 旧密码
     private String oldPassword;
     // 新密码
-    private String newPassword; 
+    private String newPassword;
 }
 ```
 
@@ -4928,11 +4850,11 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
 }
 ```
 
-# 十一.实现宠物中心功能
+## 十一. 实现宠物中心功能
 
-## 1.实现宠物管理功能
+### 1 实现宠物管理功能
 
-### 1.1查询所有宠物列表数据功能
+#### 1.1查询所有宠物列表数据功能
 
 创建对应宠物模块实体类animal
 
@@ -5081,7 +5003,7 @@ public class AnimalServiceImpl extends ServiceImpl<AnimalDao, Animal> implements
     //注入AnimalDao
     @Autowired
     private AnimalDao animalDao;
-    
+
     @Override
     // 定义一个方法，接收名称、类型、当前页码和每页显示数量作为参数，并返回查询结果
     public Result selectPage(String name, String type, Integer currentPage, Integer size) {
@@ -5118,11 +5040,9 @@ public interface AnimalDao extends BaseMapper<Animal> {
 
 将img文件夹中的资源拷贝进此项目中
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763952423956-5c5ff96e-3a3c-41f5-86eb-57746637ff84.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763952423956-5c5ff96e-3a3c-41f5-86eb-57746637ff84.png "null")
-
-### 1.2实现批量删除宠物功能
+#### 1.2实现批量删除宠物功能
 
 在AnimalController中添加deleteBatch方法用于批量删除
 
@@ -5192,11 +5112,11 @@ public class AnimalController {
 }
 ```
 
-### 1.3实现添加宠物功能
+#### 1.3实现添加宠物功能
 
 当点击添加时,首先下拉框会查询对应的宠物种类,所以先处理这个请求
 
-#### 1.3.1查询宠物品种功能
+##### 1.3.1查询宠物品种功能
 
 创建对应宠物品种实体类Breed
 
@@ -5301,7 +5221,7 @@ public interface BreedDao extends BaseMapper<Breed> {
 }
 ```
 
-#### 1.3.2添加宠物功能
+##### 1.3.2添加宠物功能
 
 在AnimalController中添加save方法
 
@@ -5380,7 +5300,7 @@ public class AnimalController {
 }
 ```
 
-### 1.4编辑宠物功能
+#### 1.4编辑宠物功能
 
 在AnimalController中添加updateAnimal方法用于更新数据
 
@@ -5473,9 +5393,9 @@ public class AnimalController {
 }
 ```
 
-## 2.实现领养管理功能
+### 2 实现领养管理功能
 
-### 2.1查询领养列表数据
+#### 2.1查询领养列表数据
 
 创建对应实体类Adopt
 
@@ -5687,13 +5607,9 @@ public interface AdoptDao extends BaseMapper<Adopt> {
 
 **注意:通过配置文件扫描了mapper文件夹,不要乱修改名字**
 
-  
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763985857218-6897ed88-9241-4370-9fe1-ce1c2547f0f3.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763985857218-6897ed88-9241-4370-9fe1-ce1c2547f0f3.png "null")
-
-  
-
-![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763985880810-ede484e2-37de-4da9-9dd7-4354620a44b4.png "null")
+![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1763985880810-ede484e2-37de-4da9-9dd7-4354620a44b4.png)
 
 在mapper文件夹下创建对应的AdoptDao.xml文件
 
@@ -5728,7 +5644,7 @@ public interface AdoptDao extends BaseMapper<Adopt> {
         <!-- 动态条件过滤 -->
         <where>
             <!-- 如果name不为空且不为空字符串，则添加模糊查询条件 -->
-            <!-- CONCAT函数用于拼接字符串 -->           
+            <!-- CONCAT函数用于拼接字符串 -->
             <if test="name != null and name != ''">
                 AND an.name LIKE CONCAT('%', #{name}, '%')
             </if>
@@ -5741,7 +5657,7 @@ public interface AdoptDao extends BaseMapper<Adopt> {
 </mapper>
 ```
 
-### 2.2批量删除领养信息功能
+#### 2.2批量删除领养信息功能
 
 在AdoptController中添加deleteBatch方法,用于根据id批量进行删除
 
@@ -5867,7 +5783,7 @@ public class AdoptServiceImpl extends ServiceImpl<AdoptDao, Adopt> implements Ad
 }
 ```
 
-### 2.3实现编辑领养信息功能
+#### 2.3实现编辑领养信息功能
 
 管理员可以通过修改领养记录的状态来审核领养申请。当领养状态改为"已归还"时，系统自动将对应宠物的状态恢复为"待领养"，确保宠物可以重新被申请领养。
 
@@ -5878,7 +5794,7 @@ package com.qf.enums;
 
 public enum AnimalEnum {
     ADOPTING("领养中"),
-    NO_ADOPT("待领养"),   
+    NO_ADOPT("待领养"),
     ADOPT_CANCEL("放弃领养");
 
     private String info;
@@ -6039,9 +5955,9 @@ public class AdoptServiceImpl extends ServiceImpl<AdoptDao, Adopt> implements Ad
 }
 ```
 
-## 3.实现宠物房间功能
+### 3 实现宠物房间功能
 
-### 3.1查询宠物房间列表数据
+#### 3.1查询宠物房间列表数据
 
 创建对应宠物房间Room实体类
 
@@ -6189,7 +6105,7 @@ public interface RoomDao extends BaseMapper<Room> {
 }
 ```
 
-### 3.2批量删除宠物房间功能
+#### 3.2批量删除宠物房间功能
 
 在RoomController中添加deleteBatch方法,用于批量删除功能
 
@@ -6322,7 +6238,7 @@ public class RoomServiceImpl extends ServiceImpl<RoomDao, Room> implements RoomS
 }
 ```
 
-### 3.3添加宠物房间功能
+#### 3.3添加宠物房间功能
 
 在enums包下创建枚举类RoomStatus(房间状态)
 
@@ -6510,7 +6426,7 @@ public class RoomServiceImpl extends ServiceImpl<RoomDao, Room> implements RoomS
 }
 ```
 
-### 3.4.编辑宠物房间功能
+#### 3.4 编辑宠物房间功能
 
 在RoomController中添加updateById方法,用于修改房间信息
 
@@ -6708,9 +6624,9 @@ public class RoomServiceImpl extends ServiceImpl<RoomDao, Room> implements RoomS
 }
 ```
 
-## 4.实现宠物品种管理功能
+### 4 实现宠物品种管理功能
 
-### 4.1查询所有宠物品种列表数据
+#### 4.1查询所有宠物品种列表数据
 
 在BreedController中添加selectPage方法,用于查询宠物品种列表数据
 
@@ -6802,9 +6718,7 @@ public class BreedServiceImpl extends ServiceImpl<BreedDao, Breed> implements Br
 }
 ```
 
-  
-
-### 4.2实现批量删除品种功能
+#### 4.2实现批量删除品种功能
 
 在BreedController中添加deleteBatch方法,用于批量删除品种数据
 
@@ -6943,7 +6857,7 @@ public class BreedServiceImpl extends ServiceImpl<BreedDao, Breed> implements Br
 }
 ```
 
-### 4.3实现添加品种功能
+#### 4.3实现添加品种功能
 
 在BreedController中添加add方法,用于新增品种数据
 
@@ -7118,7 +7032,7 @@ public class BreedServiceImpl extends ServiceImpl<BreedDao, Breed> implements Br
 }
 ```
 
-### 4.4实现编辑品种功能
+#### 4.4实现编辑品种功能
 
 在BreedController中添加updateById方法,用于修改品种数据
 
@@ -7343,7 +7257,7 @@ public class BreedServiceImpl extends ServiceImpl<BreedDao, Breed> implements Br
 }
 ```
 
-## 5.实现宠物健康管理功能
+### 5 实现宠物健康管理功能
 
 打开当前页面首先会查询全部的宠物数据
 
@@ -7522,7 +7436,7 @@ public class AnimalServiceImpl extends ServiceImpl<AnimalDao, Animal> implements
 }
 ```
 
-### 5.1查询健康记录列表数据
+#### 5.1查询健康记录列表数据
 
 宠物健康管理模块涉及两张表的关联查询：健康记录表（health_record）和宠物表（animal）。需要先创建对应的视图对象（VO）用于封装连表查询的结果。
 
@@ -7787,7 +7701,7 @@ public interface HealthRecordDao extends BaseMapper<HealthRecord> {
 </mapper>
 ```
 
-### 5.2实现批量删除健康记录功能
+#### 5.2实现批量删除健康记录功能
 
 在HealthRecordController中添加deleteBatch方法
 
@@ -7915,7 +7829,7 @@ public class HealthRecordServiceImpl extends ServiceImpl<HealthRecordDao, Health
 }
 ```
 
-### 5.3实现添加健康记录功能
+#### 5.3实现添加健康记录功能
 
 在HealthRecordController中添加save方法，用于新增健康记录数据
 
@@ -8073,7 +7987,7 @@ public class HealthRecordServiceImpl extends ServiceImpl<HealthRecordDao, Health
 }
 ```
 
-### 5.4实现编辑健康记录功能
+#### 5.4实现编辑健康记录功能
 
 在HealthRecordController中添加updateById方法，用于修改健康记录数据
 
@@ -8262,7 +8176,7 @@ public class HealthRecordServiceImpl extends ServiceImpl<HealthRecordDao, Health
 }
 ```
 
-### 5.5根据宠物ID查询健康记录
+#### 5.5根据宠物ID查询健康记录
 
 在HealthRecordController中添加selectByPetId方法，根据宠物ID查询该宠物的所有健康记录
 
@@ -8468,9 +8382,9 @@ public class HealthRecordServiceImpl extends ServiceImpl<HealthRecordDao, Health
 }
 ```
 
-# 十二.实现宠物用品商城功能
+## 十二. 实现宠物用品商城功能
 
-## 1.实现订单管理功能
+### 1 实现订单管理功能
 
 订单管理是商城模块的核心，涉及订单创建、状态流转（待支付→待发货→待自提→已完成）、余额支付、确认收货等完整业务流程。
 
@@ -8586,7 +8500,7 @@ public class OrdersVO extends Orders {
 }
 ```
 
-### 2.1查询订单列表数据
+#### 2.1查询订单列表数据
 
 创建OrdersController在中添加getOrdersByPage方法。管理员可以查看所有订单，普通用户只能查看自己的订单
 
@@ -8776,7 +8690,7 @@ public interface OrdersDao extends BaseMapper<Orders> {
 </mapper>
 ```
 
-### 2.2实现批量删除订单功能
+#### 2.2实现批量删除订单功能
 
 在OrdersController中添加deleteBatch方法
 
@@ -8921,7 +8835,7 @@ public class OrdersServiceImpl extends ServiceImpl<OrdersDao, Orders> implements
 }
 ```
 
-### 2.3实现修改订单状态（发货）功能
+#### 2.3实现修改订单状态（发货）功能
 
 管理员可以通过此接口将订单状态改为"待自提"（W_Pickup），表示商品已发货
 
@@ -9115,7 +9029,7 @@ public class OrdersServiceImpl extends ServiceImpl<OrdersDao, Orders> implements
 }
 ```
 
-## 2.实现商品管理功能
+### 2 实现商品管理功能
 
 商品管理模块用于管理商城中的宠物用品。首先创建Goods实体类，对应数据库goods表
 
@@ -9156,7 +9070,7 @@ public class Goods {
 }
 ```
 
-### 1.1查询商品列表数据
+#### 1.1查询商品列表数据
 
 在GoodsController中添加getGoodsByPage方法，支持按名称模糊查询和分页
 
@@ -9275,7 +9189,7 @@ public interface GoodsDao extends BaseMapper<Goods> {
 }
 ```
 
-### 1.2实现批量删除商品功能
+#### 1.2实现批量删除商品功能
 
 在GoodsController中添加deleteBatch方法
 
@@ -9418,7 +9332,7 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsDao, Goods> implements Go
 }
 ```
 
-### 1.3实现添加商品功能
+#### 1.3实现添加商品功能
 
 在GoodsController中添加save方法，用于新增商品数据。注意：商品图片需要先通过文件上传接口获取图片路径后再提交
 
@@ -9591,7 +9505,7 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsDao, Goods> implements Go
 }
 ```
 
-### 1.4实现编辑商品功能
+#### 1.4实现编辑商品功能
 
 在GoodsController中添加updateById方法
 
@@ -9794,11 +9708,11 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsDao, Goods> implements Go
 }
 ```
 
-# 十三.实现系统管理功能
+## 十三. 实现系统管理功能
 
 系统管理模块是管理员后台的核心，包括通知公告管理、用户管理、首页轮播图管理、消息推送管理和菜单管理等功能。
 
-## 1.实现通知公告管理
+### 1 实现通知公告管理
 
 通知公告用于向所有用户发布系统消息。首先在entity包下创建Notice实体类
 
@@ -10059,7 +9973,7 @@ public interface NoticeDao extends BaseMapper<Notice> {
 }
 ```
 
-## 2.实现用户管理功能
+### 2 实现用户管理功能
 
 管理员可以通过用户管理模块查看所有用户、搜索用户、批量删除用户以及给用户充值余额。这些接口在之前的UserController基础上扩展
 
@@ -10611,7 +10525,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
 }
 ```
 
-## 3.实现首页轮播图管理
+### 3 实现首页轮播图管理
 
 首页轮播图模块涉及文件上传和图片管理。首先创建HomeSlider实体类
 
@@ -10880,7 +10794,7 @@ public interface HomeSliderDao extends BaseMapper<HomeSlider> {
 }
 ```
 
-## 4.实现消息推送管理
+### 4 实现消息推送管理
 
 消息推送模块（PetNotification）支持管理员向指定角色或指定用户发送通知消息，用户端可查看自己的通知并标记已读。首先创建PetNotification实体类
 
@@ -11204,7 +11118,7 @@ public interface PetNotificationDao extends BaseMapper<PetNotification> {
 }
 ```
 
-## 5.实现后台菜单管理
+### 5 实现后台菜单管理
 
 菜单管理模块支持动态配置后台侧边栏菜单，支持父子菜单嵌套结构、按角色权限过滤。首先创建Menu实体类
 
@@ -11440,7 +11354,7 @@ public class MenuServiceImpl extends ServiceImpl<MenuDao, Menu> implements MenuS
 }
 ```
 
-## 6.实现图标字典管理
+### 6 实现图标字典管理
 
 图标字典用于提供菜单图标的选择列表。首先创建IconDict实体类
 
@@ -11584,11 +11498,11 @@ public interface IconDictDao extends BaseMapper<IconDict> {
 }
 ```
 
-# 十四.实现宠物服务管理功能
+## 十四. 实现宠物服务管理功能
 
 宠物服务平台涵盖寄养服务、流浪宠物上报、训练项目管理、训练申请、美容服务和医疗服务六大业务模块，以及医疗服务类型基础数据维护。
 
-## 1.实现宠物寄养服务管理
+### 1 实现宠物寄养服务管理
 
 宠物寄养模块用于管理用户的宠物寄养申请，涉及寄养记录表（foster）和房间表（room）的关联操作。当寄养结束时会自动释放对应房间。首先创建Foster实体类
 
@@ -11666,7 +11580,7 @@ public class FosterVO extends Foster {
 }
 ```
 
-### 1.1查询寄养记录列表数据
+#### 1.1查询寄养记录列表数据
 
 在FosterController中添加selectPage方法，用于分页查询寄养记录
 
@@ -11829,7 +11743,7 @@ public interface FosterDao extends BaseMapper<Foster> {
 </mapper>
 ```
 
-### 1.2实现修改寄养记录功能
+#### 1.2实现修改寄养记录功能
 
 首先会查询全部的房间数据
 
@@ -12140,7 +12054,7 @@ public class FosterServiceImpl extends ServiceImpl<FosterDao, Foster> implements
 }
 ```
 
-### 1.3实现删除寄养记录功能
+#### 1.3实现删除寄养记录功能
 
 在FosterController中添加deleteById方法，通过路径参数接收寄养记录ID
 
@@ -12203,7 +12117,7 @@ public class FosterController {
 }
 ```
 
-### 1.4实现添加寄养记录功能
+#### 1.4实现添加寄养记录功能
 
 在FosterController中添加save方法，用于新增寄养申请记录
 
@@ -12277,11 +12191,11 @@ public class FosterController {
 }
 ```
 
-## 2.实现流浪宠物上报功能
+### 2 实现流浪宠物上报功能
 
 流浪宠物上报模块（Submit）用于处理流浪宠物救助信息，用户提交包含宠物信息文本和多张图片，管理员可以审核上报记录。
 
-### 2.1 实现查询列表数据功能
+#### 2.1 实现查询列表数据功能
 
 首先创建Submit实体类
 
@@ -12425,7 +12339,7 @@ public interface SubmitDao extends BaseMapper<Submit> {
 }
 ```
 
-### 2.2 查看上报图片功能
+#### 2.2 查看上报图片功能
 
 首先创建对应的实体类SubmitImg对应数据库表submit_img
 
@@ -12558,7 +12472,7 @@ public interface SubmitDao extends BaseMapper<Submit> {
 }
 ```
 
-### 2.3 处理功能
+#### 2.3 处理功能
 
 创建枚举类SubmitEnum
 
@@ -12705,7 +12619,7 @@ public class SubmitServiceImpl extends ServiceImpl<SubmitDao, Submit> implements
 }
 ```
 
-## 3.实现训练项目管理
+### 3 实现训练项目管理
 
 训练项目管理（TrainingName）是基础数据，用于训练申请中的服务类型下拉选择。该模块同样是标准CRUD，路径前缀为`/trainingName`。首先创建TrainingName实体类
 
@@ -12988,7 +12902,7 @@ public interface TrainingNameDao extends BaseMapper<TrainingName> {
 }
 ```
 
-## 4.实现训练申请管理
+### 4 实现训练申请管理
 
 训练申请模块用于管理用户的宠物训练预约申请。首先创建PetTrainingService实体类，对应数据库表pet_training_services
 
@@ -13255,7 +13169,7 @@ public interface PetTrainingServiceDao extends BaseMapper<PetTrainingService> {
 }
 ```
 
-## 5.实现宠物美容服务管理
+### 5 实现宠物美容服务管理
 
 首先创建PetGroomingService实体类，对应数据库pet_grooming_services表
 
@@ -13524,7 +13438,7 @@ public interface PetGroomingServiceDao extends BaseMapper<PetGroomingService> {
 }
 ```
 
-### 6.实现宠物医疗服务管理
+#### 6 实现宠物医疗服务管理
 
 医疗服务模块的结构与美容服务完全一致。创建PetMedicalService实体类
 
@@ -13780,7 +13694,7 @@ public interface PetMedicalServiceDao extends BaseMapper<PetMedicalService> {
 }
 ```
 
-## 7.实现医疗服务类型管理
+### 7 实现医疗服务类型管理
 
 医疗服务类型（MedicalServiceType）同样是基础数据维护模块，用于医疗服务中的服务类型下拉选择。路径前缀为`/medicalServiceType`，只需提供selectAll查询全部类型即可。首先创建MedicalServiceType实体类
 
@@ -13913,7 +13827,7 @@ public interface MedicalServiceTypeDao extends BaseMapper<MedicalServiceType> {
 
 至此，宠物服务管理模块全部完成，包括寄养服务、流浪宠物上报、训练项目管理、训练申请、美容服务、医疗服务六个业务模块以及医疗服务类型一个基础数据模块。这些模块遵循统一的分层架构：Controller接收请求、Service处理业务逻辑、Dao层完成数据持久化，代码结构清晰、易于维护和扩展。
 
-# 十五.实现首页数据展示功能
+## 十五. 实现首页数据展示功能
 
 数据展示模块（Show）为管理员仪表盘提供统计数据，包括系统综合统计、宠物状态分布、宠物品种分布以及领养趋势数据。所有复杂查询逻辑封装在Service层。
 
@@ -14436,9 +14350,9 @@ public interface AnimalDao extends BaseMapper<Animal> {
 </mapper>
 ```
 
-# 十六.实现用户端功能
+## 十六. 实现用户端功能
 
-## 1.首先会查询所有商品,宠物以及轮播图信息请求对应的地址为:
+### 1 首先会查询所有商品,宠物以及轮播图信息请求对应的地址为:
 
 ```
 查询所有商品 : http://localhost:8080/api/goods/selectAll
@@ -14667,3 +14581,10 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsDao, Goods> implements Go
     }
 }
 ```
+
+[^1]: Java Web 的“老祖宗”和底层地基。在没有各种高级框架的年代，只要你想用 Java 接收网页请求，就必须继承 `HttpServlet` 并重写 `doGet` 或 `doPost` 方法。Tomcat 之所以能运行 Java 网页，就是因为它是一个“Servlet 容器”。传统 Servlet 采用的是“一个请求对应一个线程”的阻塞模式，在高并发时比较消耗内存。
+
+[^2]: 基于 **M**odel（模型）、**V**iew（视图）、**C**ontroller（控制器）设计模式
+	- **Controller（控制器）：** 负责接收前端发来的请求（比如你点的那个前端按钮），并决定调用什么业务逻辑。
+	- **Model（模型）：** 承载数据（比如从数据库里查出来的用户信息）。
+	- **View（视图）：** 负责把数据渲染成网页（不过现在前后端分离了，View 通常直接退化为返回 JSON 数据）。
