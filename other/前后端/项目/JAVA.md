@@ -704,7 +704,7 @@ public interface AdminService {
 
 AdminServiceImpl
 
-```
+```java
 package com.qf.service.impl;
 
 import com.qf.service.AdminService;
