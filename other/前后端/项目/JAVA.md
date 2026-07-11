@@ -691,7 +691,7 @@ IOC是Spring框架的核心功能之一,IOC(inversion of control)控制反转
 
 AdminService
 
-```
+```java
 package com.qf.service;
 
 //service包下面.全部放的都是接口interface
