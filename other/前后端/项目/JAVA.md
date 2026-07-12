@@ -724,7 +724,7 @@ public class AdminServiceImpl implements AdminService {
 
 AdminController
 
-```
+```java
 package com.qf.controller;
 
 import com.qf.service.AdminService;
