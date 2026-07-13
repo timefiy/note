@@ -659,10 +659,9 @@ spring的核心功能
 
 ### 1  介绍
 
-IOC是Spring框架的核心功能之一,IOC(inversion of control)控制反转
+IOC是Spring框架的核心功能之一,(inversion of control)控制反转
 
 控制: 控制创建对象的能力
-
 反转: 原来创建对象是自己做,反转就是将创建对象的能力交给Spring
 
 ---
@@ -763,7 +762,7 @@ public class AdminController {
 
 我们先在pom.xml导入起步依赖
 
-```
+```xml
 <dependency>
   <groupId>org.projectlombok</groupId>
   <artifactId>lombok</artifactId>
@@ -807,7 +806,7 @@ MVC框架特点
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1754277332382-a088991a-6ee5-4714-8fc1-147c859c7b4a.png)
 
-### 2  请求&响应【重点】
+### 2  请求&响应
 
 其实我们之前的那些案例中就已经使用了请求和响应
 
@@ -815,21 +814,17 @@ MVC框架特点
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/40865112/1749387362263-0cab7140-a805-4a6b-a18a-a3632d99421e.png)
 
-练习： 类中再定义其他方法和请求路径
-
-@RequestMapping注解使用
-
-### 3  参数绑定 【重点】
+### 3  参数绑定
 
 所谓参数绑定,就是前端发请求中的数据,可以直接在Controller的方法参数中接收.即前端请求数据和后端方法参数绑定.
 
-#### 3.1 简单类型参数绑定[重点]
+#### 3.1 简单类型参数绑定
 
 简单类型指,常用的几种类型: 基本类型+String+Date
 
 前端页面
 
-```
+```html
 <head>
   <meta charset="UTF-8">
 </head>
